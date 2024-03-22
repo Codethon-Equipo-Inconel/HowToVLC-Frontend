@@ -8,6 +8,6 @@ importante { angular, node, npm, typescript } <br>
 
 *(imagen conseguida utilizando el comando **ng version**)*
 <br>
-![image](https://github.com/Codethon-Equipo-Inconel/HowToVLC/assets/127340466/f4a0776e-b71f-4f5a-97e0-e52b157a1b61)
+![image](https://github.com/Codethon-Equipo-Inconel/HowToVLC/assets/127340466/3c9cb420-240b-4190-a911-07c95d96c01d)
 
 ## Recursos
