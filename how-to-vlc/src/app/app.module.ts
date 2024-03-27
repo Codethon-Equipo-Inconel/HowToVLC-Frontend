@@ -10,7 +10,7 @@ import { RecursosComponent } from './pages/recursos/recursos.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    RecursosComponent
+    RecursosComponent,
   ],
   imports: [
     BrowserModule,
