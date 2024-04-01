@@ -1,0 +1,86 @@
+/* GENERAL */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+body{margin: 0; background-color: #0B0F2B;}
+
+/* -------------------------------------------------- FORMULARIO --------------------------------------------------- */
+
+/****** top del formulario ******/
+form, form *{background-color: #333554;}
+
+.formulario-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px;
+    column-gap: 30px;
+    padding: 20px;
+    border: solid #333554 2px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px 5px #060818;
+}
+
+/* Elementos del formulario */
+form div {display: flex; flex-direction: column;}
+
+form label {margin-bottom: 1vh;}
+
+form div input, form div select, form div select option{
+    height: 3.5vh;
+    border: solid #1a1e3b 1px;
+    background-color: #1a1e3b;
+    border-radius: 5px;
+}
+
+form div select{height: 4vh;}
+
+form div select .default{
+    color:#9c9c9c;
+}
+
+/* bottom del formulario */
+.submit-button-container, .mensaje{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-items: center;
+}
+
+.submit-button{
+    height: 4.5vh;
+    width: 7vw;
+    min-width: fit-content;
+    background-color: #FFC107;
+    border: solid #FFC107 1px;
+    color:#6e4b00;
+    cursor: pointer;
+}
+
+.submit-button:active{
+    background-color: #00BCD4;
+    border: solid #00BCD4 1px;
+    color:#005e74;
+}
+
+form .mensaje, form .asterisco{
+    font-size: smaller;
+    align-items: flex-start;
+    color: grey;
+}
+
+/* ------------------------------------------------ FIN FORMULARIO ------------------------------------------------ */
+
+
+/******************************************************* FOOTER ******************************************************/
+
+footer{display: flex; justify-content: center; align-items: center;}
+footer p{color:#FFC107;font-size: 1.5vh;}
