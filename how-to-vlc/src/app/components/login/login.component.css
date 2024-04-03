@@ -1,47 +1,58 @@
-/* GENERAL */
+/* GENERAL - Se podría añadir a todas las páginas */ 
 *{
     font-family: Arial, Helvetica, sans-serif;
     color:#FFFFFF;
     text-decoration: none;
 }
-body{margin: 0; background-color: #0B0F2B;}
+body{margin: 0; background-color: #0A0E3F;}
 
 /* -------------------------------------------------- FORMULARIO --------------------------------------------------- */
 
-/****** top del formulario ******/
-form, form *{background-color: #333554;}
+form, form *{background-color: #39336a; font-size: auto; text-wrap: nowrap;}
 
 .formulario-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; justify-content: center; align-items: center;
     height: 90vh;
+    margin: 0 5vw;
 }
 
 form{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 15px;
-    column-gap: 30px;
-    padding: 20px;
-    border: solid #333554 2px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 25px 5px #060818;
+    /* medidas */
+    height: 50vh; width: 35vw;
+    max-height: 350px; min-height: fit-content;
+    max-width: 100%; min-width: fit-content;
+    /* display */
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    align-items: center; justify-content:space-between;
+    /* separaciones */
+    column-gap: 2vw;
+    padding: 3.5vh 3vw 2.5vh 3vw;
+    /* efectos: bordes y sombra */
+    border: solid #39336a 2px; border-radius: 15px;
+    box-shadow: 0px 0px 25px 5px rgba(5, 5, 15, 0.75);
 }
 
 /* Elementos del formulario */
 form div {display: flex; flex-direction: column;}
 
+/****** Top del formulario ******/
 form label {margin-bottom: 1vh;}
 
-form div input, form div select, form div select option{
-    height: 3.5vh;
-    border: solid #1a1e3b 1px;
-    background-color: #1a1e3b;
-    border-radius: 5px;
+form div input, form div select{
+    /* medidas */
+    height: 3vh; width: 15vw;
+    min-height: fit-content; max-height: 40px;
+    min-width: 150px; max-width: 100%;
+    /* separaciones */
+    padding: 5px 0; /* Separación interior arriba y abajo en el recuadro de input */
+    /* color de fondo y bordes */
+    background-color: #1e1c50; 
+    border: solid #1e1c50 1px; border-radius: 5px;
+    border-left-width: 10px; /* Añade un espacio más grande al principio entre el texto y el container del input */
 }
 
-form div select{height: 4vh;}
+form div .fecha{height: 3.2vh;}
+
 
 form div select .default{
     color:#9c9c9c;
@@ -56,19 +67,28 @@ form div select .default{
 }
 
 .submit-button{
-    height: 4.5vh;
-    width: 7vw;
-    min-width: fit-content;
-    background-color: #FFC107;
-    border: solid #FFC107 1px;
-    color:#6e4b00;
+    /* medidas */
+    height: 4.5vh; width: 7vw;
+    min-height: 30px; min-width: 80px;
+    /* color de fondo y bordes */
+    background-color: #ffcd07;
+    border: solid #ffcd07 1px;
+    /* letra */
+    color:#826c00;
     cursor: pointer;
+    font-size: medium;
+    /* transición de hover y active */
+    transition: ease-in-out 0.3s;
 }
-
+.submit-button:hover{
+    background-color:#00a2ff;
+    border: solid #00a2ff 1px;
+    color:#005180;
+}
 .submit-button:active{
-    background-color: #00BCD4;
-    border: solid #00BCD4 1px;
-    color:#005e74;
+    background-color: #005180;
+    border: solid #005180 1px;
+    color:#002940;
 }
 
 form .mensaje, form .asterisco{
@@ -83,4 +103,4 @@ form .mensaje, form .asterisco{
 /******************************************************* FOOTER ******************************************************/
 
 footer{display: flex; justify-content: center; align-items: center;}
-footer p{color:#FFC107;font-size: 1.5vh;}
+footer p{color:#ffcd07;font-size: 1.5vh;}
