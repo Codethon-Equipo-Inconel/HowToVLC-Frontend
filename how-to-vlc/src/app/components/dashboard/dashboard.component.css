@@ -22,11 +22,49 @@ body{ margin: 0; background-color: var(--background); }
 /* -------------------------------------------------- DASHBOARD --------------------------------------------------- */
 
 
+main .dashboard-container {
+    display: grid; grid-template-columns: repeat(5, 1fr);
+    align-items: center; justify-content: center;
+    height: 90vh; width: 100%;
+}
 
+main .dashboard-container section{ display: grid; }
 
+/* parte izquierda */
 
+main .dashboard-container .left-dashboard{
+    /* ocupa 2 de 5 columnas */
+    grid-column-start: 1; grid-column-end: 3;
 
+    /* propiedades del div izquierdo: tiene 2 columnas */
+    grid-template-columns: repeat(2, 1fr);
+}
 
+main .dashboard-container .left-dashboard .dashboard-items-container{
+    display: grid; grid-template-columns: repeat(2, 1fr); /* se divide en 2 por default */
+    padding: 4vh 2vw;
+}
+
+main .dashboard-container .left-dashboard .transporte, main .dashboard-container .left-dashboard .recursos{
+    grid-column-start: 1; grid-column-end: end;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr); /* la cambiamos a 4 */
+}
+
+/* parte derecha */
+
+main .dashboard-container .right-dashboard{
+    /* ocupa 3 de 5 columnas */
+    grid-column-start: 3; grid-column-end: end;
+
+    /* propiedades del div derecho: tiene tres columnas */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main .dashboard-container .right-dashboard .dashboard-items-container{
+    display: grid; grid-template-columns: repeat(3, 1fr); /* se divide en 3 por default */
+    padding: 4vh 2vw;
+}
 
 
 
