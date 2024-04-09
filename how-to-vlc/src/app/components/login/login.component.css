@@ -1,14 +1,27 @@
 /* GENERAL - Se podría añadir a todas las páginas */ 
+
+:root{ /* ¡¡IMPORTANTE!! Variables para los colores, usar estas y añadir colores aquí */
+    --background : #0A0E3F;
+    --item-background : #39336a;
+    --subitem-background : #1e1c50;
+
+    --amarillo-main : #ffcd07;
+    --amarillo-enfasis : #826c00;
+
+    --gris : grey;
+    --blanco : white;
+}
+
 *{
     font-family: Arial, Helvetica, sans-serif;
-    color:#FFFFFF;
+    color: var(--blanco);
     text-decoration: none;
 }
-body{margin: 0; background-color: #0A0E3F;}
+body{margin: 0; background-color: var(--background);}
 
 /* -------------------------------------------------- FORMULARIO --------------------------------------------------- */
 
-form, form *{background-color: #39336a; font-size: auto; text-wrap: nowrap;}
+form, form *{background-color: var(--item-background); font-size: auto; text-wrap: nowrap;}
 
 .formulario-container{
     display: flex; justify-content: center; align-items: center;
@@ -28,7 +41,7 @@ form{
     column-gap: 2vw;
     padding: 3.5vh 3vw 2.5vh 3vw;
     /* efectos: bordes y sombra */
-    border: solid #39336a 2px; border-radius: 15px;
+    border: solid var(--item-background) 2px; border-radius: 15px;
     box-shadow: 0px 0px 25px 5px rgba(5, 5, 15, 0.75);
 }
 
@@ -46,8 +59,8 @@ form div input, form div select{
     /* separaciones */
     padding: 5px 0; /* Separación interior arriba y abajo en el recuadro de input */
     /* color de fondo y bordes */
-    background-color: #1e1c50; 
-    border: solid #1e1c50 1px; border-radius: 5px;
+    background-color: var(--subitem-background); 
+    border: solid var(--subitem-background) 1px; border-radius: 5px;
     border-left-width: 10px; /* Añade un espacio más grande al principio entre el texto y el container del input */
 }
 
@@ -55,7 +68,7 @@ form div .fecha{height: 3.2vh;}
 
 
 form div select .default{
-    color:#9c9c9c;
+    color: var(--gris);
 }
 
 /* bottom del formulario */
@@ -71,10 +84,10 @@ form div select .default{
     height: 4.5vh; width: 7vw;
     min-height: 30px; min-width: 80px;
     /* color de fondo y bordes */
-    background-color: #ffcd07;
-    border: solid #ffcd07 1px;
+    background-color: var(--amarillo-main);
+    border: solid var(--amarillo-main) 1px;
     /* letra */
-    color:#826c00;
+    color: var(--amarillo-enfasis);
     cursor: pointer;
     font-size: medium;
     /* transición de hover y active */
@@ -94,7 +107,7 @@ form div select .default{
 form .mensaje, form .asterisco{
     font-size: smaller;
     align-items: flex-start;
-    color: grey;
+    color: var(--gris);
 }
 
 /* ------------------------------------------------ FIN FORMULARIO ------------------------------------------------ */
@@ -103,4 +116,4 @@ form .mensaje, form .asterisco{
 /******************************************************* FOOTER ******************************************************/
 
 footer{display: flex; justify-content: center; align-items: center;}
-footer p{color:#ffcd07;font-size: 1.5vh;}
+footer p{color: var(--amarillo-main); font-size: 1.5vh;}

@@ -1,0 +1,41 @@
+/* GENERAL - Se podría añadir a todas las páginas */
+
+:root{ /* ¡¡IMPORTANTE!! Variables para los colores, usar estas y añadir colores aquí */
+    --background : #0A0E3F;
+    --item-background : #39336a;
+    --subitem-background : #1e1c50;
+
+    --amarillo-main : #ffcd07;
+    --amarillo-enfasis : #826c00;
+
+    --gris : grey;
+    --blanco : white;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+body{ margin: 0; background-color: var(--background); }
+
+/* -------------------------------------------------- DASHBOARD --------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------ FIN DASHBOARD ------------------------------------------------ */
+
+
+/******************************************************* FOOTER ******************************************************/
+
+footer{display: flex; justify-content: center; align-items: center;}
+footer p{color:#ffcd07;font-size: 1.5vh;}
