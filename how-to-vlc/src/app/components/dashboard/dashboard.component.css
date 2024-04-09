@@ -21,18 +21,47 @@ body{ margin: 0; background-color: var(--background); }
 
 /* -------------------------------------------------- DASHBOARD --------------------------------------------------- */
 
+/* pseudo bootstrap improvisado */
+main .dashboard-container .left-dashboard .full-size { grid-column-start: 1; grid-column-end: 3; }
+main .dashboard-container .right-dashboard .full-size { grid-column-start: 1; grid-column-end: 4; }
 
+main .dashboard-container .four-items { grid-template-columns: repeat(4, 1fr) !important; }
+main .dashboard-container .three-items { grid-template-columns: repeat(3, 1fr) !important; }
+main .dashboard-container .two-items { grid-template-columns: repeat(2, 1fr) !important; }
+main .dashboard-container .one-item { grid-template-columns: repeat(1, 1fr) !important; }
+
+/* estilos para el container del dashboard (lo que luego será el componente como tal) */
 main .dashboard-container {
-    display: grid; grid-template-columns: repeat(5, 1fr);
-    align-items: center; justify-content: center;
-    height: 90vh; width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center; 
+    height: 90vh; min-height: fit-content;
+    margin: 0 auto; border: solid transparent 2vw;
 }
 
-main .dashboard-container section{ display: grid; }
+/* se aplica al dashboard entero, a sus por ahora dos divisiones (left y right) y a todos los dashboard-item */
+main .dashboard-container, main .dashboard-container *, main .dashboard-item { display: grid; justify-content: center }
 
-/* parte izquierda */
+/* margen para las divisiones left y right */
+main .dashboard-container .left-dashboard, main .dashboard-container .right-dashboard{ margin: 1vh 2vw; }
 
-main .dashboard-container .left-dashboard{
+/* gap para los containers left-right y subcontainers */
+main .dashboard-container .left-dashboard, main .dashboard-container .left-dashboard .container, 
+main .dashboard-container .right-dashboard, main .dashboard-container .right-dashboard .container
+{ gap: 2vh 2vw; justify-content: center; }
+
+/* estilos para items del dashboard */
+main .dashboard-container .left-dashboard .item{
+    background-color:var(--amarillo-main); 
+    align-content:space-around;
+    height: 10vh;
+    border: solid var(--amarillo-main) 10px; border-radius: 2vh;
+}
+
+main .dashboard-container .left-dashboard .full-size{ height: 20vh; }
+
+/* IZQUIERDA */
+
+main .dashboard-container .left-dashboard {
     /* ocupa 2 de 5 columnas */
     grid-column-start: 1; grid-column-end: 3;
 
@@ -40,18 +69,7 @@ main .dashboard-container .left-dashboard{
     grid-template-columns: repeat(2, 1fr);
 }
 
-main .dashboard-container .left-dashboard .dashboard-items-container{
-    display: grid; grid-template-columns: repeat(2, 1fr); /* se divide en 2 por default */
-    padding: 4vh 2vw;
-}
-
-main .dashboard-container .left-dashboard .transporte, main .dashboard-container .left-dashboard .recursos{
-    grid-column-start: 1; grid-column-end: end;
-    justify-content: center;
-    grid-template-columns: repeat(4, 1fr); /* la cambiamos a 4 */
-}
-
-/* parte derecha */
+/* DERECHA */
 
 main .dashboard-container .right-dashboard{
     /* ocupa 3 de 5 columnas */
