@@ -1,90 +1,151 @@
 /* GENERAL - Se podría añadir a todas las páginas */
 
-:root{ /* ¡¡IMPORTANTE!! Variables para los colores, usar estas y añadir colores aquí */
-    --background : #0A0E3F;
-    --item-background : #39336a;
-    --subitem-background : #1e1c50;
+:root {
+    /* ¡¡IMPORTANTE!! Variables para los colores, usar estas y añadir colores aquí */
+    --background: #0A0E3F;
+    --item-background: #39336a;
+    --subitem-background: #1e1c50;
 
-    --amarillo-main : #ffcd07;
-    --amarillo-enfasis : #826c00;
+    --amarillo-main: #ffcd07;
+    --amarillo-enfasis: #826c00;
 
-    --gris : grey;
-    --blanco : white;
+    --gris: grey;
+    --blanco: white;
 }
 
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
-    color:#FFFFFF;
+    font-size: 1vw;
+    color: #FFFFFF;
     text-decoration: none;
 }
-body{ margin: 0; background-color: var(--background); }
+
+body {
+    margin: 0;
+    background-color: var(--background);
+}
 
 /* -------------------------------------------------- DASHBOARD --------------------------------------------------- */
 
 /* pseudo bootstrap improvisado */
-main .dashboard-container .left-dashboard .full-size { grid-column-start: 1; grid-column-end: 3; }
-main .dashboard-container .right-dashboard .full-size { grid-column-start: 1; grid-column-end: 4; }
+.dashboard-container .left-dashboard .full-size { grid-column-start: 1; grid-column-end: 3; }
 
-main .dashboard-container .four-items { grid-template-columns: repeat(4, 1fr) !important; }
-main .dashboard-container .three-items { grid-template-columns: repeat(3, 1fr) !important; }
-main .dashboard-container .two-items { grid-template-columns: repeat(2, 1fr) !important; }
-main .dashboard-container .one-item { grid-template-columns: repeat(1, 1fr) !important; }
+.dashboard-container .right-dashboard .full-size { grid-column-start: 1; grid-column-end: 4; }
 
-/* estilos para el container del dashboard (lo que luego será el componente como tal) */
-main .dashboard-container {
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center; 
-    height: 90vh; min-height: fit-content;
-    margin: 0 auto; border: solid transparent 2vw;
+.dashboard-container .four-items { grid-template-columns: repeat(4, 1fr) !important; }
+
+.dashboard-container .three-items { grid-template-columns: repeat(3, 1fr) !important; }
+
+.dashboard-container .two-items { grid-template-columns: repeat(2, 1fr) !important; }
+
+.dashboard-container .one-item { grid-template-columns: repeat(1, 1fr) !important; text-align: center; }
+
+/* todo es un grid con sus elementos centrados */
+.dashboard-container, .dashboard-container *, .dashboard-item 
+{
+    display: grid;
+    justify-content: center;
 }
 
-/* se aplica al dashboard entero, a sus por ahora dos divisiones (left y right) y a todos los dashboard-item */
-main .dashboard-container, main .dashboard-container *, main .dashboard-item { display: grid; justify-content: center }
+/* estilos para el container del dashboard */
+.dashboard-container 
+{
+    height: 90vh; min-height: fit-content; /* dimensiones */
+    grid-template-columns: repeat(5, 1fr); /* estructura */
+    align-items: center; margin: 0 auto; /* alineación */
+    border: solid transparent 2vw; /* separaciones */
+}
 
-/* margen para las divisiones left y right */
-main .dashboard-container .left-dashboard, main .dashboard-container .right-dashboard{ margin: 1vh 2vw; }
+/* margen para las divisiones left y right, las separa del borde y entre ellas */
+.dashboard-container .left-dashboard, .dashboard-container .right-dashboard { margin: 1vh 2vw; }
 
-/* gap para los containers left-right y subcontainers */
-main .dashboard-container .left-dashboard, main .dashboard-container .left-dashboard .container, 
-main .dashboard-container .right-dashboard, main .dashboard-container .right-dashboard .container
-{ gap: 2vh 2vw; justify-content: center; }
+/* gap y alineación para los containers left-right y subcontainers */
+.dashboard-container .left-dashboard, .dashboard-container .left-dashboard .container,
+.dashboard-container .right-dashboard, .dashboard-container .right-dashboard .container 
+{
+    gap: 2vh 2vw;
+    justify-content: center;
+    min-height: fit-content;
+}
 
 /* estilos para items del dashboard */
-main .dashboard-container .left-dashboard .item{
-    background-color:var(--amarillo-main); 
-    align-content:space-around;
-    height: 10vh;
-    border: solid var(--amarillo-main) 10px; border-radius: 2vh;
+.dashboard-container .dashboard-items-container /* items que contienen otros items */
+{
+    min-width: fit-content; /* dimensiones */
+    border: solid 10px; border-radius: 2vh; /* borde */
+    padding: 0.5vh 0vw; /* separaciones */
 }
 
-main .dashboard-container .left-dashboard .full-size{ height: 20vh; }
+.dashboard-container .container .item /* items individuales */
+{
+    height: 10vh; max-width: 100%; /* dimensiones */
+    border: solid 10px; border-radius: 2vh; /* borde */
+    align-content: space-around; align-self: center; /* alineación */
+}
 
 /* IZQUIERDA */
 
-main .dashboard-container .left-dashboard {
+.dashboard-container .left-dashboard 
+{
     /* ocupa 2 de 5 columnas */
-    grid-column-start: 1; grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
 
     /* propiedades del div izquierdo: tiene 2 columnas */
     grid-template-columns: repeat(2, 1fr);
 }
 
+.dashboard-container .left-dashboard .dashboard-items-container /* items que contienen otros items */ 
+{ 
+    background-color: var(--amarillo-enfasis);
+    border: solid var(--amarillo-enfasis) 10px; border-radius: 2vh;
+}
+
+.dashboard-container .left-dashboard .container .item /* items individuales */
+{
+    background-color: var(--amarillo-main); /* background */
+    border: solid var(--amarillo-main) 10px; /* borde */ 
+}
+
+/* .dashboard-container .left-dashboard .full-size { height: 20vh; /* los full-size cambian la altura } */
+
+
 /* DERECHA */
 
-main .dashboard-container .right-dashboard{
+.dashboard-container .right-dashboard 
+{
     /* ocupa 3 de 5 columnas */
-    grid-column-start: 3; grid-column-end: end;
+    grid-column-start: 3;
+    grid-column-end: end;
 
     /* propiedades del div derecho: tiene tres columnas */
     grid-template-columns: repeat(3, 1fr);
 }
 
-main .dashboard-container .right-dashboard .dashboard-items-container{
-    display: grid; grid-template-columns: repeat(3, 1fr); /* se divide en 3 por default */
-    padding: 4vh 2vw;
+.dashboard-container .right-dashboard .dashboard-items-container /* items que contienen otros items */
+{
+    background-color: var(--item-background);
+    border: solid var(--item-background) 10px; border-radius: 2vh;
 }
 
+.dashboard-container .right-dashboard .container .item /* items individuales */
+{
+    height: 15vh; min-height: fit-content; /* dimensiones */
+    background-color: var(--subitem-background); /* background */
+    border: solid var(--subitem-background) 10px; /* borde */
+}
 
+.red-social form{
+    display: grid; grid-template-columns: repeat(1, 3fr);
+    height: fit-content;
+}
+
+.social-recuadro-container input{
+    word-wrap: break-word;
+    height: 10vh; width: 25vw;
+    background-color: var(--item-background);
+    border: solid 2px var(--item-background);
+}
 
 
 
@@ -93,5 +154,13 @@ main .dashboard-container .right-dashboard .dashboard-items-container{
 
 /******************************************************* FOOTER ******************************************************/
 
-footer{display: flex; justify-content: center; align-items: center;}
-footer p{color:#ffcd07;font-size: 1.5vh;}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #ffcd07;
+    font-size: 1.5vh;
+}
