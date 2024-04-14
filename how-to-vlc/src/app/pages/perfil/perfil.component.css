@@ -1,0 +1,95 @@
+.user{
+    padding-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.icono{
+    width: 200px; 
+    height: 150px;
+    border-radius: 90%; 
+    overflow: hidden; 
+    border: 2px solid yellow; 
+    position: relative;
+    justify-self: start;
+}
+.circulo{
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    
+}
+.username h1{
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+}
+.nivel h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--blanco);
+    margin: 0px;
+}
+.nivel h5 {
+    padding-top: 0px;
+    margin: 0px;
+    color:var(--blanco);
+    
+}
+.EXP{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 25px;
+}
+.EXP h2{
+    color: var(--blanco);
+}
+.EXP progress{
+    width: 60%;
+    height: 20px;
+    border: none;
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+progress::-webkit-progress-value {
+    background-color: var(--amarillo-main); 
+  }
+  
+  progress::-moz-progress-bar {
+    background-color: var(--amarillo-main); 
+  }
+
+.Recompensas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.Recompensas h1{
+    color: var(--blanco);
+}
+.Recompensas table{
+    color: var(--blanco);
+    padding: 10px;
+    width: 80%;
+}
+
+.Recompensas th, .Recompensas td {
+    margin: auto;
+    padding: 10px; 
+    border: 1px solid var(--blanco);
+    text-align: center;
+}
+.grande{
+    padding-left: 150px !important;
+    padding-right: 150px !important;
+}
+.pequeño{
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
