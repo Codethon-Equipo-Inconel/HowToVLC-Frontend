@@ -42,7 +42,7 @@ nav ul li:first-child {
     margin-left: 0;
 }
 
-nav ul li a {
+a {
     color: #fff;
     text-decoration: none;
     display: inline-block;
@@ -52,7 +52,7 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li a::after {
+a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -63,12 +63,12 @@ nav ul li a::after {
     transition: width 0.3s ease; 
 }
 
-nav ul li a:hover {
+a:hover {
     color: #ffcc00; 
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-nav ul li a:hover::after {
+a:hover::after {
     width: 100%;
 }
 
