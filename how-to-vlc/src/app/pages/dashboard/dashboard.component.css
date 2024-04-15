@@ -1,6 +1,4 @@
 
-/* -------------------------------------------------- DASHBOARD --------------------------------------------------- */
-
 /* pseudo bootstrap improvisado */
 .dashboard-container .left-dashboard .full-size { grid-column-start: 1; grid-column-end: 3; }
 
@@ -121,20 +119,3 @@
     border: solid 2px var(--item-background);
 }
 
-
-
-/* ------------------------------------------------ FIN DASHBOARD ------------------------------------------------ */
-
-
-/******************************************************* FOOTER ******************************************************/
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer p {
-    color: #ffcd07;
-    font-size: 1.5vh;
-}
