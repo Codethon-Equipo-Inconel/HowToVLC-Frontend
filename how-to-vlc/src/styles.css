@@ -26,6 +26,107 @@
 
 body{ margin: 0; background-color: var(--background); }
 
+/******************************************************* DASHBOARD ******************************************************/
+
+/* NOTA IMPORTANTE (Ángel): esto está aquí porque si lo pongo en el css de dashboard no funciona bien
+No tiene ningún sentido, así que hasta que consiga solucionarlo vamos a dejarlo en esta hoja de estilos */
+
+/* @import './app/pages/dashboard/dashboard.component.css'; */
+
+/* margen para las divisiones left y right, las separa del borde y entre ellas */
+.left-dashboard, .dashboard-container .right-dashboard { margin: 1vh 2vw; }
+
+/* gap y alineación para los containers left-right y subcontainers */
+.left-dashboard, .left-dashboard .container,
+.right-dashboard, .right-dashboard .container 
+{
+    gap: 2vh 2vw;
+    justify-content: center;
+    min-height: fit-content;
+}
+
+/* estilos para items del dashboard */
+.dashboard-items-container /* items que contienen otros items */
+{
+    min-width: fit-content; /* dimensiones */
+    border: solid 10px; border-radius: 2vh; /* borde */
+    padding: 0.5vh 0vw; /* separaciones */
+}
+
+.container .item /* items individuales */
+{
+    height: 10vh; max-width: 100%; /* dimensiones */
+    border: solid 10px; border-radius: 2vh; /* borde */
+    align-content: space-around; align-self: center; /* alineación */
+}
+
+/* IZQUIERDA */
+
+.left-dashboard 
+{
+    /* ocupa 2 de 5 columnas */
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    /* propiedades del div izquierdo: tiene 2 columnas */
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left-dashboard .dashboard-items-container /* items que contienen otros items */ 
+{ 
+    background-color: var(--amarillo-enfasis);
+    border: solid var(--amarillo-enfasis) 10px; border-radius: 2vh;
+}
+
+.left-dashboard .container .item /* items individuales */
+{
+    background-color: var(--amarillo-main); /* background */
+    border: solid var(--amarillo-main) 10px; /* borde */ 
+}
+
+/* .dashboard-container .left-dashboard .full-size { height: 20vh; /* los full-size cambian la altura } */
+
+
+/* DERECHA */
+
+.right-dashboard 
+{
+    /* ocupa 3 de 5 columnas */
+    grid-column-start: 3;
+    grid-column-end: end;
+
+    /* propiedades del div derecho: tiene tres columnas */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.right-dashboard .dashboard-items-container /* items que contienen otros items */
+{
+    background-color: var(--item-background);
+    border: solid var(--item-background) 10px; border-radius: 2vh;
+}
+
+.right-dashboard .container .item /* items individuales */
+{
+    height: 15vh; min-height: fit-content; /* dimensiones */
+    background-color: var(--subitem-background); /* background */
+    border: solid var(--subitem-background) 10px; /* borde */
+}
+
+.red-social form{
+    display: grid; grid-template-columns: repeat(1, 3fr);
+    height: fit-content;
+}
+
+.social-recuadro-container input{
+    word-wrap: break-word;
+    height: 10vh; width: 25vw;
+    background-color: var(--item-background);
+    border: solid 2px var(--item-background);
+}
+
+/***************************************************** FIN DASHBOARD **************************************************/
+
+
 /******************************************************* FOOTER ******************************************************/
 
 footer{display: flex; justify-content: center; align-items: center;}

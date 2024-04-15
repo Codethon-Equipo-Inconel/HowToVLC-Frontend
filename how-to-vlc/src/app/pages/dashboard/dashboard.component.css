@@ -1,16 +1,15 @@
-
 /* pseudo bootstrap improvisado */
-.dashboard-container .left-dashboard .full-size { grid-column-start: 1; grid-column-end: 3; }
+.left-dashboard .full-size { grid-column-start: 1; grid-column-end: 3; }
 
-.dashboard-container .right-dashboard .full-size { grid-column-start: 1; grid-column-end: 4; }
+.right-dashboard .full-size { grid-column-start: 1; grid-column-end: 4; }
 
-.dashboard-container .four-items { grid-template-columns: repeat(4, 1fr) !important; }
+.four-items { grid-template-columns: repeat(4, 1fr) !important; }
 
-.dashboard-container .three-items { grid-template-columns: repeat(3, 1fr) !important; }
+.three-items { grid-template-columns: repeat(3, 1fr) !important; }
 
-.dashboard-container .two-items { grid-template-columns: repeat(2, 1fr) !important; }
+.two-items { grid-template-columns: repeat(2, 1fr) !important; }
 
-.dashboard-container .one-item { grid-template-columns: repeat(1, 1fr) !important; text-align: center; }
+.one-item { grid-template-columns: repeat(1, 1fr) !important; text-align: center; }
 
 /* todo es un grid con sus elementos centrados */
 .dashboard-container, .dashboard-container *, .dashboard-item 
@@ -29,93 +28,14 @@
 }
 
 /* margen para las divisiones left y right, las separa del borde y entre ellas */
-.dashboard-container .left-dashboard, .dashboard-container .right-dashboard { margin: 1vh 2vw; }
+.left-dashboard, .dashboard-container .right-dashboard { margin: 1vh 2vw; }
 
 /* gap y alineación para los containers left-right y subcontainers */
-.dashboard-container .left-dashboard, .dashboard-container .left-dashboard .container,
-.dashboard-container .right-dashboard, .dashboard-container .right-dashboard .container 
+.left-dashboard, .left-dashboard .container,
+.right-dashboard, .right-dashboard .container 
 {
     gap: 2vh 2vw;
     justify-content: center;
     min-height: fit-content;
-}
-
-/* estilos para items del dashboard */
-.dashboard-container .dashboard-items-container /* items que contienen otros items */
-{
-    min-width: fit-content; /* dimensiones */
-    border: solid 10px; border-radius: 2vh; /* borde */
-    padding: 0.5vh 0vw; /* separaciones */
-}
-
-.dashboard-container .container .item /* items individuales */
-{
-    height: 10vh; max-width: 100%; /* dimensiones */
-    border: solid 10px; border-radius: 2vh; /* borde */
-    align-content: space-around; align-self: center; /* alineación */
-}
-
-/* IZQUIERDA */
-
-.dashboard-container .left-dashboard 
-{
-    /* ocupa 2 de 5 columnas */
-    grid-column-start: 1;
-    grid-column-end: 3;
-
-    /* propiedades del div izquierdo: tiene 2 columnas */
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.dashboard-container .left-dashboard .dashboard-items-container /* items que contienen otros items */ 
-{ 
-    background-color: var(--amarillo-enfasis);
-    border: solid var(--amarillo-enfasis) 10px; border-radius: 2vh;
-}
-
-.dashboard-container .left-dashboard .container .item /* items individuales */
-{
-    background-color: var(--amarillo-main); /* background */
-    border: solid var(--amarillo-main) 10px; /* borde */ 
-}
-
-/* .dashboard-container .left-dashboard .full-size { height: 20vh; /* los full-size cambian la altura } */
-
-
-/* DERECHA */
-
-.dashboard-container .right-dashboard 
-{
-    /* ocupa 3 de 5 columnas */
-    grid-column-start: 3;
-    grid-column-end: end;
-
-    /* propiedades del div derecho: tiene tres columnas */
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.dashboard-container .right-dashboard .dashboard-items-container /* items que contienen otros items */
-{
-    background-color: var(--item-background);
-    border: solid var(--item-background) 10px; border-radius: 2vh;
-}
-
-.dashboard-container .right-dashboard .container .item /* items individuales */
-{
-    height: 15vh; min-height: fit-content; /* dimensiones */
-    background-color: var(--subitem-background); /* background */
-    border: solid var(--subitem-background) 10px; /* borde */
-}
-
-.red-social form{
-    display: grid; grid-template-columns: repeat(1, 3fr);
-    height: fit-content;
-}
-
-.social-recuadro-container input{
-    word-wrap: break-word;
-    height: 10vh; width: 25vw;
-    background-color: var(--item-background);
-    border: solid 2px var(--item-background);
 }
 
