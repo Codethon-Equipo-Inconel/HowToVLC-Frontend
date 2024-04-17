@@ -1,0 +1,18 @@
+.gallery-container {
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.gallery {
+  display: flex;
+}
+
+.image {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.image img {
+  width: 200px;
+}

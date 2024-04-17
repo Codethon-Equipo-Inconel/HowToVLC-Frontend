@@ -1,0 +1,7 @@
+<div class="gallery-container" #gallery (mousedown)="onMouseDown($event)" (mousemove)="onMouseMove($event)" (mouseup)="onMouseUp()">
+  <div class="gallery">
+    <div class="image" *ngFor="let image of images">
+      <img [src]="image.url" [alt]="image.alt" draggable="false">
+    </div>
+  </div>
+</div>
