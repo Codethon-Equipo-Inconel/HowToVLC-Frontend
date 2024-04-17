@@ -11,6 +11,7 @@ import { EventosComponent } from './pages/eventos/eventos.component';
 import { MapaComponent } from './pages/mapa/mapa.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     EventosComponent,
     MapaComponent,
     PerfilComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,
