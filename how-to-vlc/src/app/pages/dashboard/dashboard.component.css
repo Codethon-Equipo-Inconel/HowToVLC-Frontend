@@ -1,4 +1,5 @@
 /* pseudo bootstrap improvisado */
+
 .left-dashboard .full-size { grid-column-start: 1; grid-column-end: 3; }
 
 .right-dashboard .full-size { grid-column-start: 1; grid-column-end: 4; }
