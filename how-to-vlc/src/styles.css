@@ -28,9 +28,6 @@ body{ margin: 0; background-color: var(--background); }
 
 /******************************************************* DASHBOARD ******************************************************/
 
-/* NOTA IMPORTANTE (Ángel): esto está aquí porque si lo pongo en el css de dashboard no funciona bien
-No tiene ningún sentido, así que hasta que consiga solucionarlo vamos a dejarlo en esta hoja de estilos */
-
 /* @import './app/pages/dashboard/dashboard.component.css'; */
 
 /* margen para las divisiones left y right, las separa del borde y entre ellas */
@@ -46,17 +43,37 @@ No tiene ningún sentido, así que hasta que consiga solucionarlo vamos a dejarl
 }
 
 /* estilos para items del dashboard */
+
+/* IMAGENES */
+
+.img-container { /* el container de las fotos/miniaturas de las apps */
+    display: flex !important; 
+}
+
+.img-container img /* estilos para las fotos/miniaturas de apps */  
+{ 
+    /* dimensiones */
+    height: 100% !important; width: 100% !important; 
+    min-height: 100% !important; min-width: 100% !important;
+
+    object-fit: cover; /* para que no se distorsionen al redimensionarse */
+
+    border-radius: 2vh; /* borde */
+
+    transition: ease-in-out 200ms 50ms;
+}
+
 .dashboard-items-container /* items que contienen otros items */
 {
     min-width: fit-content; /* dimensiones */
-    border: solid 10px; border-radius: 2vh; /* borde */
+    border-radius: 2vh; /* borde */
     padding: 0.5vh 0vw; /* separaciones */
 }
 
 .container .item /* items individuales */
 {
     height: 10vh; max-width: 100%; /* dimensiones */
-    border: solid 10px; border-radius: 2vh; /* borde */
+    border-radius: 2vh; /* borde */
     align-content: space-around; align-self: center; /* alineación */
 }
 
@@ -74,14 +91,14 @@ No tiene ningún sentido, así que hasta que consiga solucionarlo vamos a dejarl
 
 .left-dashboard .dashboard-items-container /* items que contienen otros items */ 
 { 
-    background-color: var(--amarillo-enfasis);
-    border: solid var(--amarillo-enfasis) 10px; border-radius: 2vh;
+    background-color: var(--item-background);
+    padding: 2vh 1vw;
 }
 
 .left-dashboard .container .item /* items individuales */
 {
+    /* este color es temporal, no se tiene que ver ya que va una imagen */
     background-color: var(--amarillo-main); /* background */
-    border: solid var(--amarillo-main) 10px; /* borde */ 
 }
 
 /* .dashboard-container .left-dashboard .full-size { height: 20vh; /* los full-size cambian la altura } */
@@ -123,6 +140,10 @@ No tiene ningún sentido, así que hasta que consiga solucionarlo vamos a dejarl
     background-color: var(--item-background);
     border: solid 2px var(--item-background);
 }
+
+/* hovers */
+
+.img-container:hover img{ transform: scale(1.05); }
 
 /***************************************************** FIN DASHBOARD **************************************************/
 
