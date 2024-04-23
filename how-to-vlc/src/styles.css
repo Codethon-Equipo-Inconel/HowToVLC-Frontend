@@ -60,7 +60,7 @@ body{ margin: 0; background-color: var(--background); }
 
     border-radius: 2vh; /* borde */
 
-    transition: ease-in-out 200ms 50ms;
+    transition: ease-in-out 250ms 50ms;
 }
 
 .dashboard-items-container /* items que contienen otros items */
@@ -82,9 +82,6 @@ body{ margin: 0; background-color: var(--background); }
     border: none !important; 
 }
 
-.img-nofull-container{
-    
-}
 
 .img-nofull{
     align-self: flex-end;
@@ -97,7 +94,7 @@ body{ margin: 0; background-color: var(--background); }
 
     border-radius: 2vh; /* borde */
 
-    transition: ease-in-out 200ms 50ms;
+    transition: ease-in-out 50ms 50ms;
 }
 
 /* IZQUIERDA */
@@ -124,9 +121,6 @@ body{ margin: 0; background-color: var(--background); }
     background-color: var(--amarillo-main); /* background */
 }
 
-/* .dashboard-container .left-dashboard .full-size { height: 20vh; /* los full-size cambian la altura } */
-
-
 /* DERECHA */
 
 .right-dashboard 
@@ -142,14 +136,13 @@ body{ margin: 0; background-color: var(--background); }
 .right-dashboard .dashboard-items-container /* items que contienen otros items */
 {
     background-color: var(--item-background);
-    border: solid var(--item-background) 10px; border-radius: 2vh;
+    border: solid var(--item-background) 15px; border-radius: 2vh;
 }
 
 .right-dashboard .container .item /* items individuales */
 {
     height: 15vh; min-height: fit-content; /* dimensiones */
     background-color: var(--subitem-background); /* background */
-    border: solid var(--subitem-background) 10px; /* borde */
 }
 
 .red-social form{
@@ -157,16 +150,17 @@ body{ margin: 0; background-color: var(--background); }
     height: fit-content;
 }
 
-.social-recuadro-container input{
-    word-wrap: break-word;
-    height: 10vh; width: 25vw;
-    background-color: var(--item-background);
-    border: solid 2px var(--item-background);
-}
 
 /* hovers */
 
-.img-container:hover .img-logo-full{ transform: scale(1.05); }
+.left-dashboard .img-container:hover .img-logo-full{ transform: scale(1.1); }
+.right-dashboard .img-container:hover .img-logo-full{ transform: scale(1.05); }
+
+.left-dashboard .img-container:active .img-logo-full,
+.right-dashboard .img-container:active .img-logo-full
+{ transform: scale(1%); transition: ease-in 50ms 1ms; }
+
+.right-dashboard .img-container:active .img-logo-full{transition: ease-in 100ms 2ms;}
 
 /***************************************************** FIN DASHBOARD **************************************************/
 
