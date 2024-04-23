@@ -50,7 +50,7 @@ body{ margin: 0; background-color: var(--background); }
     display: flex !important; 
 }
 
-.img-container img /* estilos para las fotos/miniaturas de apps */  
+.img-container .img-logo-full /* estilos para las fotos/miniaturas de apps */  
 { 
     /* dimensiones */
     height: 100% !important; width: 100% !important; 
@@ -75,6 +75,29 @@ body{ margin: 0; background-color: var(--background); }
     height: 10vh; max-width: 100%; /* dimensiones */
     border-radius: 2vh; /* borde */
     align-content: space-around; align-self: center; /* alineación */
+}
+
+.section-container{
+    display: grid !important;
+    border: none !important; 
+}
+
+.img-nofull-container{
+    
+}
+
+.img-nofull{
+    align-self: flex-end;
+    /* dimensiones */
+    height: 100% !important; width: 100% !important; 
+    min-height: 50% !important; min-width: 100% !important;
+    max-height: 100% !important;
+
+    object-fit: cover; /* para que no se distorsionen al redimensionarse */
+
+    border-radius: 2vh; /* borde */
+
+    transition: ease-in-out 200ms 50ms;
 }
 
 /* IZQUIERDA */
@@ -143,12 +166,12 @@ body{ margin: 0; background-color: var(--background); }
 
 /* hovers */
 
-.img-container:hover img{ transform: scale(1.05); }
+.img-container:hover .img-logo-full{ transform: scale(1.05); }
 
 /***************************************************** FIN DASHBOARD **************************************************/
 
 
 /******************************************************* FOOTER ******************************************************/
 
-footer{display: flex; justify-content: center; align-items: center;}
-footer p{color:#ffcd07;font-size: 1.5vh;}
+footer{ display: flex; justify-content: center; align-items: center; }
+footer p{ color:#ffcd07;font-size: 1.5vh; }
