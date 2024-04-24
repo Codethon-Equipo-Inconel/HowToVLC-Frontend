@@ -68,6 +68,7 @@ body{ margin: 0; background-color: var(--background); }
     min-width: fit-content; /* dimensiones */
     border-radius: 2vh; /* borde */
     padding: 0.5vh 0vw; /* separaciones */
+    overflow: auto; /* overflow: que no se pase del container */
 }
 
 .container .item /* items individuales */
@@ -75,6 +76,7 @@ body{ margin: 0; background-color: var(--background); }
     height: 10vh; max-width: 100%; /* dimensiones */
     border-radius: 2vh; /* borde */
     align-content: space-around; align-self: center; /* alineación */
+
 }
 
 .section-container{
@@ -118,7 +120,7 @@ body{ margin: 0; background-color: var(--background); }
 .left-dashboard .container .item /* items individuales */
 {
     /* este color es temporal, no se tiene que ver ya que va una imagen */
-    background-color: var(--amarillo-main); /* background */
+    background-color: transparent; /* background */
 }
 
 /* DERECHA */
@@ -145,10 +147,82 @@ body{ margin: 0; background-color: var(--background); }
     background-color: var(--subitem-background); /* background */
 }
 
-.red-social form{
-    display: grid; grid-template-columns: repeat(1, 3fr);
-    height: fit-content;
+.red-social{
+    height: 50vh; 
+    background-image: url(assets/img/ciudad-artes-ciencias.avif); 
+    background-size: cover;
+    column-gap: 0.5vw;
+    padding: 2vh 1vw;
 }
+
+.red-social h2, .red-social .section-header i{
+    font-size: 2.75vh; padding: 0 0.5vw; margin: 0;
+}
+
+.red-social form{
+    justify-items: center;
+    max-height: 100%; width: 100%; max-width: 100%;
+    padding: 1vh 2vw;
+}
+
+.red-social form .section-header{
+    display: flex !important; 
+    align-items: center; justify-content: space-between;
+}
+
+.red-social form label{
+    align-items: center;
+    font-size: 1.5vh;
+    padding: 0;
+    margin: 0.5vh 1vw;
+}
+
+.red-social form select, .red-social form input{
+
+    width: 100%;
+    padding: 0.5vh 0.5vw;
+    margin: 1vh;
+
+    font-size: 1.5vh; 
+    color: var(--amarillo-main);
+
+    border: solid transparent 0.2vw;
+    border-radius: 1vh;
+
+    background-color: hsla(235, 73%, 14%, 0.45);
+    backdrop-filter: blur(5px);
+}
+
+.red-social form textarea{
+    resize: vertical;
+    min-height: 5vh; max-height: 10vh;
+    max-width: 100%;
+    padding: 0.5vh 0.5vw;
+
+    font-size: 1.5vh; 
+    color: var(--amarillo-main);
+
+    border: solid transparent 0.2vw;
+    border-radius: 1vh;
+
+    background-color: var(--item-background);
+    backdrop-filter: blur(5px);
+}
+
+.red-social .img-container{
+   padding: 1vw;
+}
+
+.red-social .img-link-seccion{
+    /* dimensiones */
+    height: 75% !important; width: 100% !important; 
+
+    object-fit: cover; /* para que no se distorsionen al redimensionarse */
+
+    border-radius: 2vh; /* borde */
+
+    transition: ease-in-out 250ms 50ms;
+ }
 
 
 /* hovers */
@@ -157,10 +231,13 @@ body{ margin: 0; background-color: var(--background); }
 .right-dashboard .img-container:hover .img-logo-full{ transform: scale(1.05); }
 
 .left-dashboard .img-container:active .img-logo-full,
-.right-dashboard .img-container:active .img-logo-full
-{ transform: scale(1%); transition: ease-in 50ms 1ms; }
+.right-dashboard .img-container:active .img-logo-full,
+.red-social .img-link-seccion:active
+{ transform: scale(1%) !important; transition: ease-in 50ms 1ms; }
 
 .right-dashboard .img-container:active .img-logo-full{transition: ease-in 100ms 2ms;}
+
+.red-social .img-link-seccion:hover{filter: drop-shadow(0 5px 10px var(--item-background)); transform: scale(1.0025);}
 
 /***************************************************** FIN DASHBOARD **************************************************/
 
