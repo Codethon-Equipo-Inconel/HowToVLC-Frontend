@@ -61,6 +61,7 @@ body{ margin: 0; background-color: var(--background); }
     border-radius: 2vh; /* borde */
 
     transition: ease-in-out 250ms 50ms;
+
 }
 
 .dashboard-items-container /* items que contienen otros items */
@@ -68,7 +69,6 @@ body{ margin: 0; background-color: var(--background); }
     min-width: fit-content; /* dimensiones */
     border-radius: 2vh; /* borde */
     padding: 0.5vh 0vw; /* separaciones */
-    overflow: auto; /* overflow: que no se pase del container */
 }
 
 .container .item /* items individuales */
@@ -148,6 +148,7 @@ body{ margin: 0; background-color: var(--background); }
 }
 
 .red-social{
+    overflow: auto; /* overflow: que no se pase del container */
     height: 50vh; 
     background-image: url(assets/img/ciudad-artes-ciencias.avif); 
     background-size: cover;
@@ -189,7 +190,7 @@ body{ margin: 0; background-color: var(--background); }
     border: solid transparent 0.2vw;
     border-radius: 1vh;
 
-    background-color: hsla(235, 73%, 14%, 0.45);
+    background-color: hsla(235, 73%, 14%, 0.4);
     backdrop-filter: blur(5px);
 }
 
@@ -206,7 +207,6 @@ body{ margin: 0; background-color: var(--background); }
     border-radius: 1vh;
 
     background-color: var(--item-background);
-    backdrop-filter: blur(5px);
 }
 
 .red-social .img-container{
@@ -224,6 +224,12 @@ body{ margin: 0; background-color: var(--background); }
     transition: ease-in-out 250ms 50ms;
  }
 
+ .red-social .button{
+    width: 5vw; min-width: fit-content;
+    transition: ease-in 150ms 0.5ms; 
+    font-weight: 700;
+ }
+
 
 /* hovers */
 
@@ -237,7 +243,13 @@ body{ margin: 0; background-color: var(--background); }
 
 .right-dashboard .img-container:active .img-logo-full{transition: ease-in 100ms 2ms;}
 
-.red-social .img-link-seccion:hover{filter: drop-shadow(0 5px 10px var(--item-background)); transform: scale(1.0025);}
+.red-social .img-link-seccion:hover{filter: drop-shadow(0 5px 10px var(--item-background));}
+
+.red-social .button:hover{ 
+    background-color: var(--amarillo-main); color: var(--item-background); 
+    box-shadow: -0.2vw 0.2vw var(--subitem-background);
+}
+.red-social .button:active{ background-color: var(--amarillo-enfasis); }
 
 /***************************************************** FIN DASHBOARD **************************************************/
 

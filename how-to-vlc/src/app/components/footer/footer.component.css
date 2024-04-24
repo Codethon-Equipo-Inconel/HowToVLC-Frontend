@@ -1,4 +1,7 @@
 footer {
+    height: 5vh; width: 100%;
+    position: absolute; 
+    margin: 5vh auto;
     display: flex; 
     justify-content: center; 
     align-items: center;
