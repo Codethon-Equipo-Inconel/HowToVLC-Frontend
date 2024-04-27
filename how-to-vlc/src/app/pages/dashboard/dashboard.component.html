@@ -145,17 +145,16 @@
 
 			<form>
 				<div class="section-header">
-					<i class="bi bi-map"></i>
-					<h2> A on ens veiem? </h2>
+					<h2> ¡Te propongo un plan! </h2>
 				</div>
 
 				<!-- Selector de fecha y hora -->
-				<label for="fechaHora">Fecha:</label>
-				<input type="datetime-local" id="fechaHora" name="fechaHora">
+				<label for="fechaHora">¿Cuándo?</label>
+				<input type="datetime-local" id="fechaHora" name="fechaHora" required>
 
 				<!-- Desplegable de ubicación dentro de Valencia -->
-				<label for="ubicacion">Ubicación (Valencia):</label>
-				<select id="ubicacion" name="ubicacion">
+				<label for="ubicacion">¿Dónde?</label>
+				<select id="ubicacion" name="ubicacion" required>
 					<option value="centro">Centro</option>
 					<option value="playa">Playa</option>
 					<option value="russafa">Russafa</option>
@@ -167,10 +166,12 @@
 
 				<!-- Recuadro de texto -->
 				<label for="comentarios"></label>
-				<textarea id="comentarios" name="comentarios" rows="4" cols="50"
-					placeholder="¡Danos más detalles!"></textarea>
+				<textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="¡Danos más detalles!"></textarea>
 
-				<!-- Botón de envío (opcional) -->
+				<label for="photo">¡Ilústranos!:</label>
+    			<input type="file" id="photo" name="photo" accept="image/*" required>
+
+				<!-- Botón de publicar -->
 				<input class="button" type="submit" value="Publicar">
 			</form>
 

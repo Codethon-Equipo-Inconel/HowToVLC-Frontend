@@ -147,6 +147,8 @@ body{ margin: 0; background-color: var(--background); }
     background-color: var(--subitem-background); /* background */
 }
 
+/* red social */
+
 .red-social{
     overflow: auto; /* overflow: que no se pase del container */
     height: 50vh; 
@@ -157,8 +159,10 @@ body{ margin: 0; background-color: var(--background); }
 }
 
 .red-social h2, .red-social .section-header i{
-    font-size: 2.75vh; padding: 0 0.5vw; margin: 0;
+    font-size: 2.5vh; padding: 0 0.5vw; margin: 0; 
 }
+
+.red-social h3{ font-size: 1.8vh;}
 
 .red-social form{
     justify-items: center;
@@ -173,14 +177,15 @@ body{ margin: 0; background-color: var(--background); }
 
 .red-social form label{
     align-items: center;
-    font-size: 1.5vh;
+    font-size: 1vw;
     padding: 0;
-    margin: 0.5vh 1vw;
+    margin: 1vh 1vw 0vh 1vw;
 }
 
 .red-social form select, .red-social form input{
 
-    width: 100%;
+    display: flex !important;
+    width: fit-content;
     padding: 0.5vh 0.5vw;
     margin: 1vh;
 

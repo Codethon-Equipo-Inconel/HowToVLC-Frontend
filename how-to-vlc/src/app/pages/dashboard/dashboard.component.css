@@ -86,14 +86,24 @@
     .right-dashboard {
         grid-column-start: 1; grid-column-end: 6;
         grid-row-start: 2; grid-row-end: 3;
+        row-gap: 5vh;
     }
 
     .red-social{
-        column-gap: 5vw !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+        height: fit-content !important;
     }
 
     .red-social h2, .red-social .section-header i{
-        font-size: 3vw; text-wrap: nowrap;
+        font-size: 4.5vw; text-wrap: nowrap;
+    }
+
+    .red-social h3{
+        font-size: 3vw;
+    }
+
+    .red-social label{
+        font-size: 2.5vw;
     }
 
     .red-social .button{
