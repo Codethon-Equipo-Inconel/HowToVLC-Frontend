@@ -1,38 +1,17 @@
-/* GENERAL - Se podría añadir a todas las páginas */ 
-
-:root{ /* ¡¡IMPORTANTE!! Variables para los colores, usar estas y añadir colores aquí */
-    --background : #0A0E3F;
-    --item-background : #39336a;
-    --subitem-background : #1e1c50;
-
-    --amarillo-main : #ffcd07;
-    --amarillo-enfasis : #826c00;
-
-    --gris : grey;
-    --blanco : white;
-}
-
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--blanco);
-    text-decoration: none;
-}
-body{margin: 0; background-color: var(--background);}
-
 /* -------------------------------------------------- FORMULARIO --------------------------------------------------- */
 
 form, form *{background-color: var(--item-background); font-size: auto; text-wrap: nowrap;}
 
-.formulario-container{
+.login-container{
     display: flex; justify-content: center; align-items: center;
     height: 90vh;
     margin: 0 5vw;
 }
 
-form{
+#login form{
     /* medidas */
-    height: 50vh; width: 35vw;
-    max-height: 350px; min-height: fit-content;
+    height: 90vh; width: 40vw;
+    max-height: 50%; min-height: fit-content;
     max-width: 100%; min-width: fit-content;
     /* display */
     display: grid; grid-template-columns: repeat(2, 1fr);
@@ -49,7 +28,7 @@ form{
 form div {display: flex; flex-direction: column;}
 
 /****** Top del formulario ******/
-form label {margin-bottom: 1vh;}
+form label {margin-bottom: 1vh; font-size: 1.25vw;}
 
 form div input, form div select{
     /* medidas */
@@ -57,29 +36,31 @@ form div input, form div select{
     min-height: fit-content; max-height: 40px;
     min-width: 150px; max-width: 100%;
     /* separaciones */
-    padding: 5px 0; /* Separación interior arriba y abajo en el recuadro de input */
+    padding: 1vh 0.5vw; /* Separación interior arriba y abajo en el recuadro de input */
+    /* texto */
+    font-size: 1.2vw;
     /* color de fondo y bordes */
     background-color: var(--subitem-background); 
     border: solid var(--subitem-background) 1px; border-radius: 5px;
     border-left-width: 10px; /* Añade un espacio más grande al principio entre el texto y el container del input */
 }
 
-form div .fecha{height: 3.2vh;}
+#login form div .fecha{height: 3.2vh;}
 
 
-form div select .default{
+#login form div select .default{
     color: var(--gris);
 }
 
 /* bottom del formulario */
-.submit-button-container, .mensaje{
+#login .submit-button-container, .mensaje{
     display: flex;
     grid-column-start: 1;
     grid-column-end: 3;
     align-items: center;
 }
 
-.submit-button{
+#login .submit-button{
     /* medidas */
     height: 4.5vh; width: 7vw;
     min-height: 30px; min-width: 80px;
@@ -89,31 +70,36 @@ form div select .default{
     /* letra */
     color: var(--amarillo-enfasis);
     cursor: pointer;
-    font-size: medium;
+    font-size: 1vw;
     /* transición de hover y active */
     transition: ease-in-out 0.3s;
 }
-.submit-button:hover{
+
+#login .submit-button:hover{
     background-color:#00a2ff;
     border: solid #00a2ff 1px;
     color:#005180;
 }
-.submit-button:active{
+
+#login .submit-button:active{
     background-color: #005180;
     border: solid #005180 1px;
     color:#002940;
 }
 
-form .mensaje, form .asterisco{
-    font-size: smaller;
+#login form .mensaje, #login form .asterisco{
+    font-size: 1vw;
     align-items: flex-start;
     color: var(--gris);
 }
 
+#login form .no-login {
+    display: flex; align-items: center;
+    font-size: 1.2vw;
+    text-decoration: underline;
+    transition: ease-in-out 80ms 50ms;
+}
+
+#login form .no-login:hover{ color: var(--amarillo-main); }
+
 /* ------------------------------------------------ FIN FORMULARIO ------------------------------------------------ */
-
-
-/******************************************************* FOOTER ******************************************************/
-
-footer{display: flex; justify-content: center; align-items: center;}
-footer p{color: var(--amarillo-main); font-size: 1.5vh;}
