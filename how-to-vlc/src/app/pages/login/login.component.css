@@ -102,4 +102,5 @@ form div input, form div select{
 
 #login form .no-login:hover{ color: var(--amarillo-main); }
 
+#login form .no-login:active{ color: #005180; }
 /* ------------------------------------------------ FIN FORMULARIO ------------------------------------------------ */

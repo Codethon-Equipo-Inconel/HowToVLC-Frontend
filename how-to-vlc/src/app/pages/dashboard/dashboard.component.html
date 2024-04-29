@@ -148,6 +148,10 @@
 					<h2> ¡Te propongo un plan! </h2>
 				</div>
 
+				<!-- Título del evento -->
+				<label for="nombreEvento"></label>
+				<input class="nombreEvento" type="text" id="nombreEvento" name="nombreEvento" placeholder="ej. Concierto SKA-P" required>
+
 				<!-- Selector de fecha y hora -->
 				<label for="fechaHora">¿Cuándo?</label>
 				<input type="datetime-local" id="fechaHora" name="fechaHora" required>
@@ -166,10 +170,11 @@
 
 				<!-- Recuadro de texto -->
 				<label for="comentarios"></label>
-				<textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="¡Danos más detalles!"></textarea>
+				<textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="¿Es gratis? ¿Tenéis un grupo de WhatsApp? ¿Hay comida? ¡Danos más detalles!"></textarea>
 
+				<!-- Añadir foto -->
 				<label for="photo">¡Ilústranos!:</label>
-    			<input type="file" id="photo" name="photo" accept="image/*" required>
+				<input type="file" id="photo" name="photo" accept="image/*" required>
 
 				<!-- Botón de publicar -->
 				<input class="button" type="submit" value="Publicar">
