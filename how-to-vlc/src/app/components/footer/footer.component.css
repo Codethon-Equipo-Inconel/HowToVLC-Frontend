@@ -1,4 +1,4 @@
-footer {
+.footer {
     height: 5vh; width: 100%;
     position: absolute; 
     margin: 5vh auto;
@@ -7,7 +7,7 @@ footer {
     align-items: center;
 }
 
-footer p {
+.footer p {
     color: var(--amarillo-main); 
     font-size: 1.5vh;
 }

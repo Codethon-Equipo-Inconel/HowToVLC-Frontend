@@ -1,0 +1,132 @@
+
+.recursos-container{width: 75%; margin: 0 auto;}
+.recursos-container *{max-width: 100%;}
+.recursos-container:first-child{ margin-top: 10vh; }
+.recursos-container, .seccion-recursos, .subseccion-recursos{ display: flex; }
+.seccion-recursos, .subseccion-recursos{ flex-direction: column; }
+
+.seccion-recursos{ margin: 2vh auto; }
+
+.seccion-recursos h2{ font-size: 2.5vw; }
+
+.seccion-recursos h3 {
+  width: 100%;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-bottom: solid 5px var(--amarillo-main);
+}
+
+.subseccion-recursos{display: grid; grid-template-columns: repeat(2,1fr); gap: 2vw;}
+
+.bus{display: grid; grid-template-columns: repeat(2,1fr);}
+
+/* RECURSO */
+
+.recurso {
+  display: flex; flex-direction: column; gap: 3vh;
+  width: fit-content; 
+  justify-items: flex-start;
+  padding: 5vh 5vw;
+  background-color: var(--item-background);
+  border-radius: 2.5vw;
+}
+
+/* header */
+.recurso .header-recurso {
+  height: 7.5vh; width: 100%;
+  display: flex;  align-items: center;
+  flex-direction: row;
+  gap: 2vw;
+}
+
+.recurso .header-recurso * { max-height: 7.5vh; max-width: 7.5vw;}
+
+.recurso .header-recurso h2{ font-size: 2vw; }
+
+/* cuerpo */
+
+.recurso .cuerpo-recurso{ display: flex; flex-direction: column; }
+
+.recurso .cuerpo-recurso p a{ text-decoration: underline; }
+
+.recurso .cuerpo-recurso h4{ font-size: 1vw; margin: 0.5vh 0;}
+
+.recurso .cuerpo-recurso p{ font-size: 1.1vw; color: var(--amarillo-main);}
+
+.recurso .cuerpo-recurso ul{ margin: 0.5vh 0; }
+
+.recurso .cuerpo-recurso ul li{ font-size: 1vw; }
+
+
+/* footer */
+
+.recurso .footer-recurso { 
+  height: 5vh;
+  display: flex; flex-direction: row; 
+  align-items: center;
+  gap: 1vw;  margin: 1vh 0;
+}
+
+.recurso .footer-recurso p{
+  font-size: 0.75vw; text-wrap: nowrap;
+}
+
+.recurso .footer-recurso a { height: 100%; display: flex; align-items: center; }
+
+.recurso .footer-recurso a img{ max-height: 100%; transition:ease-in-out 100ms 30ms;}
+
+/* hovers */
+
+.recurso .footer-recurso a:hover img{ filter: drop-shadow(0 0 20px var(--amarillo-main)); }
+
+.recurso .cuerpo-recurso p a:hover{ color: var(--amarillo-enfasis);}
+
+
+
+
+
+
+
+
+/* lo de las estrellitas */
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+  float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
