@@ -27,7 +27,7 @@
   display: flex; flex-direction: column; gap: 3vh;
   width: fit-content; 
   justify-items: flex-start;
-  padding: 5vh 5vw;
+  padding: 3vh 5vw;
   background-color: var(--item-background);
   border-radius: 2.5vw;
 }

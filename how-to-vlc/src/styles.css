@@ -19,7 +19,7 @@
 /******************************************************* GENERAL ******************************************************/
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Mukta", Arial, Helvetica, sans-serif;
     color: var(--blanco);
     text-decoration: none;
 }
@@ -153,7 +153,7 @@ body{ margin: 0; background-color: var(--background); }
 
 .red-social{
     overflow: auto; /* overflow: que no se pase del container */
-    height: 50vh; 
+    height: 62.5vh; 
     background-image: url(assets/img/ciudad-artes-ciencias.avif); 
     background-size: cover;
     column-gap: 0.5vw;
@@ -161,7 +161,7 @@ body{ margin: 0; background-color: var(--background); }
 }
 
 .red-social h2, .red-social .section-header i{
-    font-size: 2.5vh; padding: 0 0.5vw; margin: 0; 
+    font-size: 2.75vh; padding: 0 0.5vw; margin: 0; 
 }
 
 .red-social h3{ font-size: 1.8vh;}
@@ -189,7 +189,7 @@ body{ margin: 0; background-color: var(--background); }
 
     display: flex !important;
     width: fit-content;
-    padding: 0.5vh 0.5vw;
+    padding: 0.25vh 0.5vw;
     margin: 1vh;
 
     font-size: 1.5vh; 
