@@ -30,8 +30,6 @@ body{ margin: 0; background-color: var(--background); }
 
 /******************************************************* DASHBOARD ******************************************************/
 
-/* @import './app/pages/dashboard/dashboard.component.css'; */
-
 /* margen para las divisiones left y right, las separa del borde y entre ellas */
 .left-dashboard, .dashboard-container .right-dashboard { margin: 1vh 2vw; }
 
@@ -153,7 +151,7 @@ body{ margin: 0; background-color: var(--background); }
 
 .red-social{
     overflow: auto; /* overflow: que no se pase del container */
-    height: 62.5vh; 
+    height: 75vh; 
     background-image: url(assets/img/ciudad-artes-ciencias.avif); 
     background-size: cover;
     column-gap: 0.5vw;
@@ -170,7 +168,6 @@ body{ margin: 0; background-color: var(--background); }
     justify-items: center;
     justify-self: center;
     max-height: 100%; width: 100%; max-width: 100%;
-    padding: 1vh 2vw;
 }
 
 .red-social form .section-header{
@@ -187,8 +184,8 @@ body{ margin: 0; background-color: var(--background); }
 
 .red-social form select, .red-social form input{
 
-    display: flex !important;
-    width: fit-content;
+    display: flex !important; align-items: center !important;
+    width: fit-content; height: 4vh;
     padding: 0.25vh 0.5vw;
     margin: 1vh;
 
@@ -216,18 +213,14 @@ body{ margin: 0; background-color: var(--background); }
 
 .red-social form textarea{
     resize: vertical;
-    min-height: 5vh; max-height: 10vh;
+    min-height: 5vh; max-height: 15vh;
     max-width: 100%;
     margin: 0 auto;
 }
 
-.red-social .img-container{
-   padding: 1vw;
-}
-
 .red-social .img-link-seccion{
     /* dimensiones */
-    height: 75% !important; width: 100% !important; 
+    height: 60vh !important; width: 100% !important;
 
     object-fit: cover; /* para que no se distorsionen al redimensionarse */
 
@@ -258,7 +251,7 @@ body{ margin: 0; background-color: var(--background); }
 
 .right-dashboard .img-container:active .img-logo-full{transition: ease-in 100ms 2ms;}
 
-.red-social .img-link-seccion:hover{filter: drop-shadow(0 5px 10px var(--item-background));}
+.red-social .img-link-seccion:hover{filter: drop-shadow(0 5px 10px var(--amarillo-main));}
 
 .red-social .button:hover{ 
     background-color: var(--amarillo-main); color: var(--item-background); 

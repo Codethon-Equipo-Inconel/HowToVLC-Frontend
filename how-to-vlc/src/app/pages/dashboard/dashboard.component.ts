@@ -8,6 +8,6 @@ import { GalleryComponent } from '../eventos/componentes/gallery/gallery.compone
 })
 export class DashboardComponent {
 
-  fotosEventos = new GalleryComponent;
+  fotosEventos = new GalleryComponent; //Instancia del componente GalleryComponent para acceder al array de imagenes
 
 }
