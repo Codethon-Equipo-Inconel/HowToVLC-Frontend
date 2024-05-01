@@ -4,363 +4,92 @@
 
         <h2>Transporte público</h2>
 
+        <!-- Bus -->
         <h3>Bus</h3>
         <article id="bus" class="subseccion-recursos bus">
 
-            <div id="emt" class="recurso">
+            <app-recurso
+                [linkFoto]="emtData.linkFoto" [nombre]="emtData.nombre" [empresa]="emtData.empresa"
+                [web]="emtData.web" [shortWeb]="emtData.shortWeb" [telefono]="emtData.telefono" [email]="emtData.email"
+                [ofrece]="emtData.ofrece" [descargaios]="emtData.descargaios"
+                [descargaAndr]="emtData.descargaAndr">
+            </app-recurso>
 
-                <header class="header-recurso">
-                    <div class="recurso-img-container">
-                        <img src="assets/img/logos-apps/emt.png" alt="logo-emt">
-                    </div>
-                    <h2>EMT</h2>
-                </header>
-
-                <main class="cuerpo-recurso">
-
-                    <h4 class="nombre-empresa">Empresa Metropolitana de Transporte</h4>
-                    <p>Visita su web:
-                        <span class="linkWeb"><a href="https://www.emtvalencia.es">emtvalencia.es</a></span>
-                    </p>
-
-                    <p>¿Qué ofrece?</p>
-                    <ul>
-                        <li>Consulta los horarios de los buses</li>
-                        <li>Consulta cuántos viajes te quedan en la tarjeta</li>
-                        <li>Recarga la tarjeta</li>
-                        <li>Infórmate sobre el abono gratuito para menores de 31</li>
-                    </ul>
-
-                    <p>Tlf: <span> 900 461 046 </span></p>
-                </main>
-
-                <footer class="footer-recurso">
-                    <p>Descarga la app: </p>
-                    <a href="https://apps.apple.com/us/app/emt-valencia/id563794473?l=es&ls=1">
-                        <img src="assets/img/badges-descarga/app-store-badge.png" alt="Descarga para iOS"></a>
-                    <a href="https://play.google.com/store/apps/details?id=es.emtvalencia.emt">
-                        <img src="assets/img/badges-descarga/google-play-badge.png" alt="Descarga para Android"></a>
-                </footer>
-            </div>
-
-            <div id="fernanbus" class="recurso">
-
-                <header class="header-recurso">
-                    <div class="recurso-img-container">
-                        <img src="assets/img/logos-apps/fernanbus.png" alt="logo-fernanbus">
-                    </div>
-                    <h2>Fernanbús</h2>
-                </header>
-
-                <main class="cuerpo-recurso">
-
-                    <h4 class="nombre-empresa">Empresa marca METROBUS</h4>
-                    <p>Visita su web:
-                        <span class="linkWeb"><a href="https://transviago.com/fernanbus/">fernanbus.es</a></span>
-                    </p>
-
-                    <p>¿Qué ofrece?</p>
-                    <ul>
-                        <li>Consulta los horarios de los buses</li>
-                    </ul>
-                    <p>Tlf: <span> 961 500 082 </span></p>
-                    <p>e-mail: <span> <a href="mailto:info@fernanbus.es">info@fernanbus.es </a></span></p>
-
-                </main>
-
-                <footer class="footer-recurso">
-                    <p>Descarga la app: </p>
-                    <a href="https://apps.apple.com/es/app/fernanbus-app/id1573440983">
-                        <img src="assets/img/badges-descarga/app-store-badge.png" alt="Descarga para iOS"></a>
-                    <a href="https://play.google.com/store/apps/details?id=io.avsa.siri&pcampaignid=web_share">
-                        <img src="assets/img/badges-descarga/google-play-badge.png" alt="Descarga para Android"></a>
-                </footer>
-            </div>
+            <app-recurso
+                [linkFoto]="fernanbusData.linkFoto" [nombre]="fernanbusData.nombre"
+                [empresa]="fernanbusData.empresa" [web]="fernanbusData.web" [shortWeb]="fernanbusData.shortWeb"
+                [telefono]="fernanbusData.telefono" [email]="fernanbusData.email" [ofrece]="fernanbusData.ofrece"
+                [descargaios]="fernanbusData.descargaios" [descargaAndr]="fernanbusData.descargaAndr">
+            </app-recurso>
 
         </article>
 
+        <!-- Metro y tren -->
         <h3>Metro y tren</h3>
-        <article id="bus" class="subseccion-recursos metro">
+        <article id="metro" class="subseccion-recursos metro">
+        <!-- Metrovalencia -->
+            <app-recurso
+                [linkFoto]="metrovalenciaData.linkFoto" [nombre]="metrovalenciaData.nombre"
+                [empresa]="metrovalenciaData.empresa" [web]="metrovalenciaData.web" [shortWeb]="metrovalenciaData.shortWeb"
+                [telefono]="metrovalenciaData.telefono" [email]="metrovalenciaData.email"
+                [ofrece]="metrovalenciaData.ofrece" [descargaios]="metrovalenciaData.descargaios"
+                [descargaAndr]="metrovalenciaData.descargaAndr">
+            </app-recurso>
 
-            <div id="metrovalencia" class="recurso">
-
-                <header class="header-recurso">
-                    <div class="recurso-img-container">
-                        <img src="assets/img/logos-apps/metrovalencia.png" alt="logo-metrovalencia">
-                    </div>
-                    <h2>Metrovalencia</h2>
-                </header>
-
-                <main class="cuerpo-recurso">
-
-                    <h4 class="nombre-empresa"> Ferrocarriles de la Generalidad Valenciana</h4>
-                    <p>Visita su web:
-                        <span class="linkWeb"><a href="https://www.metrovalencia.es">metrovalencia.es</a></span>
-                    </p>
-
-                    <p>¿Qué ofrece?</p>
-                    <ul>
-                        <li>Consulta los horarios de los metros</li>
-                        <li>Consulta cuántos viajes te quedan en la tarjeta</li>
-                        <li>Recarga la tarjeta</li>
-                        <li>Infórmate sobre el abono gratuito para menores de 31</li>
-                    </ul>
-
-                    <!--                     <p>¿Cómo lo puntuarías?</p>
-                    <fieldset class="rating">
-                        <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5"
-                            title="Awesome - 5 stars"></label>
-                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half"
-                            for="star4half" title="Pretty good - 4.5 stars"></label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4"
-                            title="Pretty good - 4 stars"></label>
-                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half"
-                            for="star3half" title="Meh - 3.5 stars"></label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3"
-                            title="Meh - 3 stars"></label>
-                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half"
-                            for="star2half" title="Kinda bad - 2.5 stars"></label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2"
-                            title="Kinda bad - 2 stars"></label>
-                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half"
-                            for="star1half" title="Meh - 1.5 stars"></label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1"
-                            title="Sucks big time - 1 star"></label>
-                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half"
-                            for="starhalf" title="Sucks big time - 0.5 stars"></label>
-                    </fieldset> -->
-
-                    <p>Tlf: <span> 900 461 046 </span></p>
-                </main>
-
-                <footer class="footer-recurso">
-                    <p>Descarga la app: </p>
-                    <a href="https://apps.apple.com/es/app/metrovalencia-oficial/id1321451717">
-                        <img src="assets/img/badges-descarga/app-store-badge.png" alt="Descarga para iOS"></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.fgv.metrovalencia&hl=es_419&gl=US">
-                        <img src="assets/img/badges-descarga/google-play-badge.png" alt="Descarga para Android"></a>
-                </footer>
-            </div>
-
-            <div id="renfe" class="recurso">
-
-                <header class="header-recurso">
-                    <div class="recurso-img-container">
-                        <img src="assets/img/logos-apps/renfe.jpeg" alt="logo-renfe">
-                    </div>
-                    <h2>Renfe</h2>
-                </header>
-
-                <main class="cuerpo-recurso">
-
-                    <h4 class="nombre-empresa">Renfe Operadora</h4>
-                    <h4 class="nombre-empresa">Anteriormente "Red Nacional de Ferrocarriles Españoles"</h4>
-                    <p>Visita su web:
-                        <span class="linkWeb"><a href="https://www.renfe.com/">renfe.com</a></span>
-                    </p>
-
-                    <p>¿Qué ofrece?</p>
-                    <ul>
-                        <li>Compra de billetes de trenes de cualquier distancia</li>
-                        <li>Consulta de horarios y tarifas</li>
-                        <li>Información sobre estaciones de tren</li>
-                    </ul>
-
-                    <p>Tlf: <span> 912 320 320 </span></p>
-                    <p>e-mail: <span> <a href="mailto:atencioncliente@renfe.es">atencioncliente@renfe.es</a></span></p>
-
-                </main>
-
-                <footer class="footer-recurso">
-                    <p>Descarga la app: </p>
-                    <a href="https://apps.apple.com/es/app/renfe/id1544224672">
-                        <img src="assets/img/badges-descarga/app-store-badge.png" alt="Descarga para iOS"></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.renfeviajeros.ticket">
-                        <img src="assets/img/badges-descarga/google-play-badge.png" alt="Descarga para Android"></a>
-                </footer>
-            </div>
-
-
+        <!-- Renfe -->
+            <app-recurso
+                [linkFoto]="renfeData.linkFoto" [nombre]="renfeData.nombre" [empresa]="renfeData.empresa"
+                [web]="renfeData.web" [shortWeb]="renfeData.shortWeb" [telefono]="renfeData.telefono"
+                [email]="renfeData.email" [ofrece]="renfeData.ofrece" [descargaios]="renfeData.descargaios"
+                [descargaAndr]="renfeData.descargaAndr">
+            </app-recurso>
         </article>
 
+        <!-- Bici -->
         <h3>Bici</h3>
         <article id="bici" class="subseccion-recursos bici">
+            <!-- Valenbisi -->
+            <app-recurso
+                [linkFoto]="valenbisiData.linkFoto" [nombre]="valenbisiData.nombre"
+                [empresa]="valenbisiData.empresa" [web]="valenbisiData.web" [shortWeb]="valenbisiData.shortWeb"
+                [telefono]="valenbisiData.telefono" [email]="valenbisiData.email" [ofrece]="valenbisiData.ofrece"
+                [descargaios]="valenbisiData.descargaios" [descargaAndr]="valenbisiData.descargaAndr">
+            </app-recurso>
 
-            <!-- Recurso Valenbisi -->
-            <div id="valenbisi" class="recurso">
-
-                <header class="header-recurso">
-                    <div class="recurso-img-container">
-                        <img src="assets/img/logos-apps/valenbisi.png" alt="logo-valenbisi">
-                    </div>
-                    <h2>Valenbisi</h2>
-                </header>
-
-                <main class="cuerpo-recurso">
-
-                    <h4 class="nombre-empresa">Servicio de Alquiler de Bicicletas Públicas de Valencia</h4>
-                    <p>Visita su web:
-                        <span class="linkWeb"><a href="https://www.valenbisi.es/">valenbisi.es</a></span>
-                    </p>
-
-                    <p>¿Qué ofrece?</p>
-                    <ul>
-                        <li>Encontrar las estaciones más cercanas y su disponibilidad</li>
-                        <li>Consulta de rutas y vías ciclistas</li>
-                        <li>Obtener recompensas y viajes gratis para tus amigos</li>
-                        <li>Consulta tarifas y abonos</li>
-                    </ul>
-
-                    <p>Tlf: <span> 900 900 722 </span></p>
-                    <p>e-mail: <span> <a
-                                href="mailto:valencia.cyclocity.es@jcdecaux.com">valencia.cyclocity.es@jcdecaux.com</a></span>
-                        <br>*Un e-mail un tanto extraño, la verdad es que sí
-                    </p>
-
-                </main>
-
-                <footer class="footer-recurso">
-                    <p>Descarga la app: </p>
-                    <a href="https://apps.apple.com/es/app/valenbisi-official/id1608332826">
-                        <img src="assets/img/badges-descarga/app-store-badge.png" alt="Descarga para iOS"></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.jcdecaux.vls.valence&hl=es_EC">
-                        <img src="assets/img/badges-descarga/google-play-badge.png" alt="Descarga para Android"></a>
-                </footer>
-
-            </div>
-
-            <!-- Recurso Mibisi -->
-            <div id="mibisi" class="recurso">
-
-                <header class="header-recurso">
-                    <div class="recurso-img-container">
-                        <img src="assets/img/logos-apps/mibisi.png" alt="logo-mibisi">
-                    </div>
-                    <h2>Mibisi</h2>
-                </header>
-
-                <main class="cuerpo-recurso">
-
-                    <h4 class="nombre-empresa">Sistema Metropolitano de Bicicleta Pública</h4>
-                    <p>Visita su web:
-                        <span class="linkWeb"><a href="https://www.mibisivalencia.es">mibisivalencia.es</a></span>
-                    </p>
-
-                    <p>¿Qué ofrece?</p>
-                    <ul>
-                        <li>Crear una cuenta de usuario y gestionar tus abonos</li>
-                        <li>Mapa de las estaciones y disponibilidad de las bicis</li>
-                        <li>Consultas las tarifas</li>
-                    </ul>
-
-                    <p>Tlf: <span> 961 111 575 </span></p>
-                    <p>e-mail: <span> <a href="mailto:info@mibisivalencia.es">info@mibisivalencia.es</a></span></p>
-
-                </main>
-
-                <footer class="footer-recurso">
-                    <p style="text-wrap: wrap; width:50%">*MIBISI no dispone de app oficial.
-                        <br>Puedes consultar los carriles disponibles desde la app de:
-                        <br>"Carriles Bici Valencia" y
-                        <br>"Valencia Bicis":
-                    </p>
-                    <a href="https://apps.apple.com/es/app/mibisi/id1087894732">
-                        <img src="assets/img/badges-descarga/app-store-badge.png" alt="Descarga para iOS"></a>
-                    <a href="https://apps.apple.com/es/app/valencia-bicis/id1506976366">
-                        <img src="assets/img/badges-descarga/google-play-badge.png" alt="Descarga para Android"></a>
-                </footer>
-
-            </div>
-
+            <!-- Mibisi -->
+            <app-recurso
+                [linkFoto]="mibisiData.linkFoto" [nombre]="mibisiData.nombre" [empresa]="mibisiData.empresa"
+                [web]="mibisiData.web" [shortWeb]="mibisiData.shortWeb" [telefono]="mibisiData.telefono"
+                [email]="mibisiData.email" [ofrece]="mibisiData.ofrece" [descargaios]="mibisiData.descargaios"
+                [descargaAndr]="mibisiData.descargaAndr">
+            </app-recurso>
         </article>
 
-        <hr style="width:100%;margin:10vh auto 5vh auto">
+        <hr style="width:100%; margin:10vh auto 5vh auto"> <!-- Separador de secciones -->
 
         <h2>Transporte por empresas privadas</h2>
 
+        <!-- Motos eléctricas -->
         <h3>Motos eléctricas</h3>
         <article id="motos" class="subseccion-recursos motos">
+            <!-- Acciona -->
+            <app-recurso
+                [linkFoto]="accionaData.linkFoto" [nombre]="accionaData.nombre" [empresa]="accionaData.empresa"
+                [web]="accionaData.web" [shortWeb]="accionaData.shortWeb" [telefono]="accionaData.telefono"
+                [email]="accionaData.email" [ofrece]="accionaData.ofrece" [descargaios]="accionaData.descargaios"
+                [descargaAndr]="accionaData.descargaAndr">
+            </app-recurso>
 
-            <div id="acciona" class="recurso">
+            <!-- Cooltra -->
+            <app-recurso
+                [linkFoto]="cooltraData.linkFoto" [nombre]="cooltraData.nombre" [empresa]="cooltraData.empresa"
+                [web]="cooltraData.web" [shortWeb]="cooltraData.shortWeb" [telefono]="cooltraData.telefono"
+                [email]="cooltraData.email" [ofrece]="cooltraData.ofrece" [descargaios]="cooltraData.descargaios"
+                [descargaAndr]="cooltraData.descargaAndr">
+            </app-recurso>
 
-                <header class="header-recurso">
-                    <div class="recurso-img-container">
-                        <img src="assets/img/logos-apps/acciona.png" alt="logo-acciona">
-                    </div>
-                    <h2>Acciona</h2>
-                </header>
-
-                <main class="cuerpo-recurso">
-
-                    <h4 class="nombre-empresa">ACCIONA Movilidad</h4>
-                    <p>Visita su web:
-                        <span class="linkWeb"><a
-                                href="https://movilidad.acciona.com/es_ES/valencia/">mobilidad.acciona.com</a></span>
-                    </p>
-
-                    <p>¿Qué ofrece?</p>
-                    <ul>
-                        <li>Consulta tarifas y ofertas</li>
-                        <li>Encuentra respuesta a las FAQ</li>
-                    </ul>
-
-                    <p>Tlf: <span> 900 866 002 </span></p>
-                    <p>e-mail: <span> <a
-                                href="mailto:accionamovilidad@acciona.com">accionamovilidad@acciona.com</a></span>
-                    </p>
-
-                </main>
-
-                <footer class="footer-recurso">
-                    <p>Descarga la app: </p>
-                    <a href="https://apps.apple.com/us/app/acciona-motosharing-movilidad/id1431664935?ign-mpt=uo%3D4">
-                        <img src="assets/img/badges-descarga/app-store-badge.png" alt="Descarga para iOS"></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.acciona.mobility.app">
-                        <img src="assets/img/badges-descarga/google-play-badge.png" alt="Descarga para Android"></a>
-                </footer>
-
-            </div>
-
-            <div id="cooltra" class="recurso">
-
-                <header class="header-recurso">
-                    <div class="recurso-img-container">
-                        <img src="assets/img/logos-apps/cooltra.png" alt="logo-acciona">
-                    </div>
-                    <h2>Cooltra</h2>
-                </header>
-
-                <main class="cuerpo-recurso">
-
-                    <h4 class="nombre-empresa">Cooltra Motosharing</h4>
-                    <p>Visita su web:
-                        <span class="linkWeb"><a href="https://cooltra.com/es/">cooltra.com</a></span>
-                    </p>
-
-                    <p>¿Qué ofrece?</p>
-                    <ul>
-                        <li>Consulta tarifas y ofertas</li>
-                        <li>Infórmate sobre los servicios que ofrece</li>
-                    </ul>
-
-                    <p>Tlf: <span> 937 066 912 </span></p>
-                    <p>e-mail: <span> <a href="mailto:ainfo@cooltra.com">info@cooltra.com</a></span>
-                    </p>
-
-                </main>
-
-                <footer class="footer-recurso">
-                    <p>Descarga la app: </p>
-                    <a href="https://apps.apple.com/es/app/cooltra-motosharing-scooter/id1083424977">
-                        <img src="assets/img/badges-descarga/app-store-badge.png" alt="Descarga para iOS"></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.mobime.ecooltra">
-                        <img src="assets/img/badges-descarga/google-play-badge.png" alt="Descarga para Android"></a>
-                </footer>
-
-            </div>
-
+            <!-- Otros servicios similares -->
             <div class="recurso otros-recursos">
-
                 <header class="header-recurso">
                     <div class="recurso-img-container">
                         <img src="assets/img/scooter.jpg" alt="scooter">
@@ -369,7 +98,6 @@
                 </header>
 
                 <main class="cuerpo-recurso">
-
                     <p>YEGO:
                         <span class="linkWeb"><a href="https://landing.rideyego.com/valence">landing.rideyego.com</a></span>
                     </p>
@@ -381,11 +109,8 @@
                     <p>RideOn:
                         <span class="linkWeb"><a href="https://rideon.es/valencia/">rideon.es</a></span>
                     </p>
-
                 </main>
-
             </div>
-
         </article>
 
     </section>

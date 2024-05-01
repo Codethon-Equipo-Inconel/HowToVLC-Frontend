@@ -35,7 +35,7 @@ body{ margin: 0; background-color: var(--background); }
 
 /* gap y alineación para los containers left-right y subcontainers */
 .left-dashboard, .left-dashboard .container,
-.right-dashboard, .right-dashboard .container 
+.right-dashboard, .right-dashboard .container
 {
     gap: 2vh 2vw;
     justify-content: center;
@@ -47,13 +47,13 @@ body{ margin: 0; background-color: var(--background); }
 /* IMAGENES */
 
 .img-container { /* el container de las fotos/miniaturas de las apps */
-    display: flex !important; 
+    display: flex !important;
 }
 
-.img-container .img-logo-full /* estilos para las fotos/miniaturas de apps */  
-{ 
+.img-container .img-logo-full /* estilos para las fotos/miniaturas de apps */
+{
     /* dimensiones */
-    height: 100% !important; width: 100% !important; 
+    height: 100% !important; width: 100% !important;
     min-height: 100% !important; min-width: 100% !important;
 
     object-fit: cover; /* para que no se distorsionen al redimensionarse */
@@ -81,14 +81,14 @@ body{ margin: 0; background-color: var(--background); }
 
 .section-container{
     display: grid !important;
-    border: none !important; 
+    border: none !important;
 }
 
 
 .img-nofull{
     align-self: flex-end;
     /* dimensiones */
-    height: 100% !important; width: 100% !important; 
+    height: 100% !important; width: 100% !important;
     min-height: 50% !important; min-width: 100% !important;
     max-height: 100% !important;
 
@@ -101,7 +101,7 @@ body{ margin: 0; background-color: var(--background); }
 
 /* IZQUIERDA */
 
-.left-dashboard 
+.left-dashboard
 {
     /* ocupa 2 de 5 columnas */
     grid-column-start: 1;
@@ -111,8 +111,8 @@ body{ margin: 0; background-color: var(--background); }
     grid-template-columns: repeat(2, 1fr);
 }
 
-.left-dashboard .dashboard-items-container /* items que contienen otros items */ 
-{ 
+.left-dashboard .dashboard-items-container /* items que contienen otros items */
+{
     background-color: var(--item-background);
     padding: 2vh 1vw;
 }
@@ -125,7 +125,7 @@ body{ margin: 0; background-color: var(--background); }
 
 /* DERECHA */
 
-.right-dashboard 
+.right-dashboard
 {
     /* ocupa 3 de 5 columnas */
     grid-column-start: 3;
@@ -151,15 +151,15 @@ body{ margin: 0; background-color: var(--background); }
 
 .red-social{
     overflow: auto; /* overflow: que no se pase del container */
-    height: 75vh; 
-    background-image: url(assets/img/ciudad-artes-ciencias.avif); 
+    height: 75vh;
+    background-image: url(assets/img/ciudad-artes-ciencias.avif);
     background-size: cover;
     column-gap: 0.5vw;
     padding: 2vh 1vw;
 }
 
 .red-social h2, .red-social .section-header i{
-    font-size: 2.75vh; padding: 0 0.5vw; margin: 0; 
+    font-size: 2.75vh; padding: 0 0.5vw; margin: 0;
 }
 
 .red-social h3{ font-size: 1.8vh;}
@@ -171,7 +171,7 @@ body{ margin: 0; background-color: var(--background); }
 }
 
 .red-social form .section-header{
-    display: flex !important; 
+    display: flex !important;
     align-items: center; justify-content: space-between;
 }
 
@@ -189,7 +189,7 @@ body{ margin: 0; background-color: var(--background); }
     padding: 0.25vh 0.5vw;
     margin: 1vh;
 
-    font-size: 1.5vh; 
+    font-size: 1.5vh;
     color: var(--amarillo-main);
 
     border: solid transparent 0.2vw;
@@ -202,7 +202,7 @@ body{ margin: 0; background-color: var(--background); }
 .red-social form .nombreEvento, .red-social form textarea{
     padding: 0.5vh 0.5vw;
 
-    font-size: 1.5vh; 
+    font-size: 1.5vh;
     color: var(--amarillo-main);
 
     border: solid transparent 0.2vw;
@@ -231,7 +231,7 @@ body{ margin: 0; background-color: var(--background); }
 
  .red-social .button{
     width: 5vw; min-width: fit-content;
-    transition: ease-in 150ms 0.5ms; 
+    transition: ease-in 150ms 0.5ms;
     font-weight: 700;
  }
 
@@ -253,18 +253,11 @@ body{ margin: 0; background-color: var(--background); }
 
 .red-social .img-link-seccion:hover{filter: drop-shadow(0 5px 10px var(--amarillo-main));}
 
-.red-social .button:hover{ 
-    background-color: var(--amarillo-main); color: var(--item-background); 
+.red-social .button:hover{
+    background-color: var(--amarillo-main); color: var(--item-background);
     box-shadow: -0.2vw 0.2vw var(--subitem-background);
 }
 .red-social .button:active{ background-color: var(--amarillo-enfasis); }
 
 
 /***************************************************** FIN DASHBOARD **************************************************/
-
-
-
-
-/******************************************************* FOOTER ******************************************************/
-
-

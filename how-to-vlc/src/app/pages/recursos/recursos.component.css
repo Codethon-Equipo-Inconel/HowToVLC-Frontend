@@ -2,8 +2,7 @@
 .recursos-container{width: 75%; margin: 0 auto;}
 .recursos-container *{max-width: 100%;}
 .recursos-container:first-child{ margin-top: 10vh; }
-.recursos-container, .seccion-recursos, .subseccion-recursos{ display: flex; }
-.seccion-recursos, .subseccion-recursos{ flex-direction: column; }
+.recursos-container { display: flex; }
 
 .seccion-recursos{ margin: 2vh auto; }
 
@@ -22,23 +21,15 @@
 .bus{display: grid; grid-template-columns: repeat(2,1fr);}
 
 
-/* RECURSO */
+/* OTROS RECURSOS */
+/* todo: hacer otro componente con esta estructura */
 
-.recurso {
-  display: flex; flex-direction: column; gap: 3vh;
-  width: fit-content; 
-  justify-items: flex-start;
-  padding: 3vh 5vw;
-  background-color: var(--item-background);
-  border-radius: 2.5vw;
-}
-
-.otros-recursos{ grid-column-start: 1; grid-column-end: 3; justify-self: center; width: 80%;}
+.otros-recursos{ grid-column-start: 1; grid-column-end: 3; justify-self: center; width: 80%; }
 
 .otros-recursos .cuerpo-recurso p{margin: 0.5vh 0;}
 
 /* header */
-.recurso .header-recurso {
+.otros-recursos .header-recurso {
   height: 7.5vh; width: 100%;
   display: flex;  align-items: center;
   flex-direction: row;
@@ -47,93 +38,27 @@
 
 .recurso-img-container img{border-radius: 1vw;}
 
-.recurso .header-recurso * { max-height: 7.5vh; max-width: 7.5vw;}
+.otros-recursos .header-recurso * { max-height: 7.5vh; max-width: 7.5vw;}
 
-.recurso .header-recurso h2{ font-size: 2vw; text-wrap: nowrap;}
+.otros-recursos .header-recurso h2{ font-size: 2vw; text-wrap: nowrap;}
 
 /* cuerpo */
 
-.recurso .cuerpo-recurso{ display: flex; flex-direction: column; }
+.otros-recursos .cuerpo-recurso{ display: flex; flex-direction: column; }
 
-.recurso .cuerpo-recurso p a{ text-decoration: underline; }
+.otros-recursos .cuerpo-recurso p a{ text-decoration: underline; }
 
-.recurso .cuerpo-recurso h4{ font-size: 1vw; margin: 0.5vh 0;}
+.otros-recursos .cuerpo-recurso h4{ font-size: 1vw; margin: 0.5vh 0;}
 
-.recurso .cuerpo-recurso p{ font-size: 1.1vw; color: var(--amarillo-main);}
+.otros-recursos .cuerpo-recurso p{ font-size: 1.1vw; color: var(--amarillo-main);}
 
-.recurso .cuerpo-recurso ul{ margin: 0.5vh 0; }
+.otros-recursos .cuerpo-recurso ul{ margin: 0.5vh 0; }
 
-.recurso .cuerpo-recurso ul li{ font-size: 1vw; }
-
-
-/* footer */
-
-.recurso .footer-recurso { 
-  height: 5vh;
-  display: flex; flex-direction: row; 
-  align-items: center;
-  gap: 1vw;  margin: 1vh 0;
-}
-
-.recurso .footer-recurso p{
-  font-size: 0.75vw; text-wrap: nowrap;
-}
-
-.recurso .footer-recurso a { height: 100%; display: flex; align-items: center; }
-
-.recurso .footer-recurso a img{ max-height: 100%; transition:ease-in-out 100ms 30ms;}
+.otros-recursos .cuerpo-recurso ul li{ font-size: 1vw; }
 
 /* hovers */
 
-.recurso .footer-recurso a:hover img{ filter: drop-shadow(0 0 20px var(--amarillo-main)); }
+.otros-recursos .footer-recurso a:hover img{ filter: drop-shadow(0 0 20px var(--amarillo-main)); }
 
-.recurso .cuerpo-recurso p a:hover{ color: var(--amarillo-enfasis);}
+.otros-recursos .cuerpo-recurso p a:hover{ color: var(--amarillo-enfasis);}
 
-
-
-
-
-
-
-
-/* lo de las estrellitas */
-
-@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-
-
-/****** Style Star Rating Widget *****/
-
-.rating { 
-  border: none;
-  float: left;
-}
-
-.rating > input { display: none; } 
-.rating > label:before { 
-  margin: 5px;
-  font-size: 1em;
-  font-family: FontAwesome;
-  display: inline-block;
-  content: "\f005";
-}
-
-.rating > .half:before { 
-  content: "\f089";
-  position: absolute;
-}
-
-.rating > label { 
-  color: #ddd; 
-  float: right; 
-}
-
-/***** CSS Magic to Highlight Stars on Hover *****/
-
-.rating > input:checked ~ label, /* show gold star when clicked */
-.rating:not(:checked) > label:hover, /* hover current star */
-.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
-
-.rating > input:checked + label:hover, /* hover current star when changing rating */
-.rating > input:checked ~ label:hover,
-.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 

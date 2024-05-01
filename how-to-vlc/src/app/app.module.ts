@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { RecursosComponent } from './pages/recursos/recursos.component';
+import { RecursoComponent } from './pages/recursos/componentes/recurso/recurso.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { EventosComponent } from './pages/eventos/eventos.component';
@@ -18,6 +19,7 @@ import { GalleryComponent } from './pages/eventos/componentes/gallery/gallery.co
     AppComponent,
     HeaderComponent,
     RecursosComponent,
+    RecursoComponent,
     LoginComponent,
     FooterComponent,
     DashboardComponent,

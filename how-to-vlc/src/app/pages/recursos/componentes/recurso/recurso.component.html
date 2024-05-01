@@ -1,0 +1,38 @@
+<div class="recurso {{ nombre }} ">
+
+  <header class="header-recurso">
+    <div class="recurso-img-container">
+      <img [src]="linkFoto" alt="logo-{{ nombre }}">
+    </div>
+    <h2>{{ nombre }}</h2>
+  </header>
+
+  <main class="cuerpo-recurso">
+
+    <h4 class="nombre-empresa">{{ empresa }}</h4>
+    <p>Visita su web:
+      <span class="linkWeb"><a [href]="web">{{ shortWeb }}</a></span>
+    </p>
+
+    <p>¿Qué ofrece?</p>
+    <ul>
+      <li *ngFor="let item of ofrece">
+        {{ item }}
+      </li>
+    </ul>
+
+    <p>Tlf: <span> {{ telefono }} </span></p>
+    <p>e-mail: <span> <a href="mailto:{{ email }}">{{ email }}</a></span>
+    </p>
+
+  </main>
+
+  <footer class="footer-recurso">
+    <p>Descarga la app: </p>
+    <a [href]=" descargaios ">
+      <img src="assets/img/badges-descarga/app-store-badge.png" alt="Descarga para iOS"></a>
+    <a [href]=" descargaAndr ">
+      <img src="assets/img/badges-descarga/google-play-badge.png" alt="Descarga para Android"></a>
+  </footer>
+
+</div>
