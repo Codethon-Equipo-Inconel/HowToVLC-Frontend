@@ -33,6 +33,10 @@
   border-radius: 2.5vw;
 }
 
+.otros-recursos{ grid-column-start: 1; grid-column-end: 3; justify-self: center; width: 80%;}
+
+.otros-recursos .cuerpo-recurso p{margin: 0.5vh 0;}
+
 /* header */
 .recurso .header-recurso {
   height: 7.5vh; width: 100%;
@@ -45,7 +49,7 @@
 
 .recurso .header-recurso * { max-height: 7.5vh; max-width: 7.5vw;}
 
-.recurso .header-recurso h2{ font-size: 2vw; }
+.recurso .header-recurso h2{ font-size: 2vw; text-wrap: nowrap;}
 
 /* cuerpo */
 
