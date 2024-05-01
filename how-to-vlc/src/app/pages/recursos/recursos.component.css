@@ -41,6 +41,8 @@
   gap: 2vw;
 }
 
+.recurso-img-container img{border-radius: 1vw;}
+
 .recurso .header-recurso * { max-height: 7.5vh; max-width: 7.5vw;}
 
 .recurso .header-recurso h2{ font-size: 2vw; }
