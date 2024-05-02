@@ -2,32 +2,32 @@
     <form class="login-form" action="" method="post">
         <div>
             <label for="nombre">Nombre: <span class="asterisco">*</span></label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" [(ngModel)]="name" id="nombre" name="nombre" required>
         </div>
 
         <div>
             <label for="apellidos">Apellidos: </label>
-            <input type="text" id="apellidos" name="apellidos" required>
+            <input type="text" [(ngModel)]="surname" id="apellidos" name="apellidos" required>
         </div>
 
         <div>
             <label for="email">Correo electrónico: <span class="asterisco">*</span></label>
-            <input type="email" id="email" name="email" placeholder="ejemplo@mail.com" required>
+            <input type="email" [(ngModel)]="email" id="email" name="email" placeholder="ejemplo@mail.com" required>
         </div>
 
         <div>
             <label for="usuario">Nombre de usuario: <span class="asterisco">*</span></label>
-            <input type="text" id="usuario" name="usuario" required>
+            <input type="text" [(ngModel)]="username" id="usuario" name="usuario" required>
         </div>
 
         <div>
             <label for="contrasena">Contraseña: <span class="asterisco">*</span></label>
-            <input type="password" id="contrasena" name="contrasena" required>
+            <input type="password" [(ngModel)]="password" id="contrasena" name="contrasena" required>
         </div>
 
         <div>
             <label for="fecha_nacimiento">Fecha de nacimiento: <span class="asterisco">*</span></label>
-            <input class="fecha" type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            <input class="fecha" [(ngModel)]="birthdate" type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
         </div>
 
         <div class="mensaje">

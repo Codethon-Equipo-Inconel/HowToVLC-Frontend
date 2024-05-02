@@ -7,10 +7,15 @@ import { MapaComponent } from './pages/mapa/mapa.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 const routes: Routes = [{
   path: 'login',
   component: LoginComponent
+},
+{
+  path: 'register',
+  component: RegisterComponent
 },
 {
   path: 'dashboard',
@@ -21,7 +26,7 @@ const routes: Routes = [{
   component: RecursosComponent
 },
 {
-path: 'recurso',
+  path: 'recurso',
   component: RecursoComponent
 },
 {
@@ -40,6 +45,8 @@ path: 'recurso',
   path: '', redirectTo: 'login', pathMatch: 'full'
 }
 ];
+
+export const routing = RouterModule.forRoot(routes);
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -15,6 +15,7 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { GalleryComponent } from './pages/eventos/componentes/gallery/gallery.component';
 import { LocalidadesServicesService } from './services/localidades-services.service';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { LocalidadesServicesService } from './services/localidades-services.serv
     MapaComponent,
     PerfilComponent,
     GalleryComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+import { formatDate } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,22 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+  name!: string;
+  surname?: string;
+  email!: string;
+  username!: string;
+  password!: string;
+  birthdate!: Date;
+
+  constructor() {}
+
+  login() {
+    console.log(this.name);
+    console.log(this.surname);
+    console.log(this.email);
+    console.log(this.username);
+    console.log(this.password);
+    console.log(this.birthdate);
+  }
 }
+
