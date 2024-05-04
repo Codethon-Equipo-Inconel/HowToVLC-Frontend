@@ -1,4 +1,6 @@
 
+#recursos { flex-direction: column;}
+
 .recursos-container{width: 75%; margin: 0 auto;}
 .recursos-container *{max-width: 100%;}
 .recursos-container:first-child{ margin-top: 10vh; }
@@ -16,7 +18,7 @@
   border-bottom: solid 5px var(--amarillo-main);
 }
 
-.subseccion-recursos{display: grid; grid-template-columns: repeat(2,1fr); gap: 2vw;}
+.subseccion-recursos{ display: grid; grid-template-columns: repeat(2,1fr); gap: 2vw; }
 
 .bus{display: grid; grid-template-columns: repeat(2,1fr);}
 

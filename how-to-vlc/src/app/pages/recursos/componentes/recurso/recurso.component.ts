@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, inject } from '@angular/core';
 
 @Component({
   selector: 'app-recurso',
@@ -14,6 +14,7 @@ export class RecursoComponent implements OnInit{
   @Input() shortWeb!: string;
   @Input() telefono!: string;
   @Input() email?: string;
+  @Input() contacto?: string;
   @Input() ofrece!: string[];
   @Input() descargaios!: string;
   @Input() descargaAndr!: string;

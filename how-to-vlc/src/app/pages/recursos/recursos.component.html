@@ -115,4 +115,37 @@
 
     </section>
 
+    <hr style="width:100%; margin:10vh auto 5vh auto"> <!-- Separador de secciones -->
+
+    <section id="gva" class="seccion-recursos gva">
+
+        <h2>Apps Oficiales de la Generalitat Valenciana</h2>
+
+        <h3>GVA</h3>
+        <article id="gva" class="subseccion-recursos gva">
+
+            <app-recurso id="gva+salut"
+            [linkFoto]="GVASalutData.linkFoto" [nombre]="GVASalutData.nombre"
+            [empresa]="GVASalutData.empresa" [ofrece]="GVASalutData.ofrece"
+            [telefono]="GVASalutData.telefono"
+            [email]="GVASalutData.email" [contacto]="GVASalutData.contacto"
+            [web]="GVASalutData.web" [shortWeb]="GVASalutData.shortWeb"
+            [descargaios]="GVASalutData.descargaios" [descargaAndr]="GVASalutData.descargaAndr" >
+            </app-recurso>
+
+            <app-recurso id="labora"
+            [linkFoto]="LABORAData.linkFoto" [nombre]="LABORAData.nombre"
+            [empresa]="LABORAData.empresa" [ofrece]="LABORAData.ofrece"
+            [telefono]="LABORAData.telefono"
+            [email]="LABORAData.email" [contacto]="LABORAData.contacto"
+            [web]="LABORAData.web" [shortWeb]="LABORAData.shortWeb"
+            [descargaios]="LABORAData.descargaios" [descargaAndr]="LABORAData.descargaAndr" >
+
+            </app-recurso>
+
+        </article>
+
+    </section>
+
+
 </div>
