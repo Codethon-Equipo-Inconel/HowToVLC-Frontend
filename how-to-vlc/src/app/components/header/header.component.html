@@ -1,37 +1,36 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
-    <link rel="stylesheet" href="header.component.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	<meta charset="UTF-8">
+	<title>header</title>
+	<link rel="stylesheet" href="header.component.css">
 </head>
 <body>
-    <header class="mobile-header" id="header">
-        <nav>
-            <ul>
-                <li><a href="#" routerLink="dashboard" class="menu-section"><i class="fa-solid fa-house"></i><span>Inicio</span></a></li>
-                <li><a href="#" routerLink="eventos" class="menu-section"><i class="fa-solid fa-calendar"></i><span>Eventos</span></a></li>
-                <li><a href="#" routerLink="recursos" class="menu-section"><i class="fa-solid fa-magnifying-glass"></i><span>Recursos</span></a></li>
-                <li><a href="#" routerLink="mapa" class="menu-section"><i class="fa-solid fa-earth-americas"></i><span>Mapa</span></a></li>
-                <li><a href="#" routerLink="perfil" class="menu-section"><img src="../../../assets/img/mondongo.png" alt="imagen usuario" class="profile-img"><span>Perfil</span></a></li>
-                <li class="logo">
-                    <a href="#" routerLink="dashboard">
-                        <span>
-                            <div class="wrapper">
-                                <svg>
-                                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                                        HowToVLC
-                                    </text>
-                                </svg>
-                            </div>
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<h1>Logotipo</h1>
+			</div>
+		</div>
+	</header>
+	<div class="capa"></div>
+<!--	--------------->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="#">Portafolio</a>
+			<a href="#">Servicios</a>
+			<a href="#">Suscribirse</a>
+			<a href="#">Facebook</a>
+			<a href="#">Youtube</a>
+			<a href="#">Instagram</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
 </body>
 </html>
