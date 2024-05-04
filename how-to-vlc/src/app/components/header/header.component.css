@@ -4,7 +4,7 @@
 		padding: 0;
 		box-sizing: border-box;
 		font-family: 'Montserrat Alternates', sans-serif;
-        z-index: 9999;
+        z-index: 999;
 	}
 	body{
 		background: url(https://www.xtrafondos.com/wallpapers/montanas-con-nieve-en-el-bosque-3934.jpg);
@@ -65,7 +65,7 @@
 	}
 	.container-menu{
 		position: absolute;
-		background: rgba(0,0,0,0.5);
+		background: rgba(0, 0, 0, 0.068);
 		width: 100%;
 		height: 100vh;
 		top: 0;left: 0;
@@ -80,7 +80,7 @@
 	.cont-menu{
 		width: 100%;
 		max-width: 250px;
-		background: #1c1c1c;
+		background: #1c1c1cb7;
 		height: 100vh;
 		position: relative;
 		transition: all 500ms ease;
@@ -97,13 +97,13 @@
 		display: block;
 		text-decoration: none;
 		padding: 20px;
-		color: #c7c7c7;
+		color: #ffffff;
 		border-left: 5px solid transparent;
 		transition: all 400ms ease;
 	}
 	.cont-menu nav a:hover{
 		border-left: 5px solid #c7c7c7;
-		background: #1f1f1f;
+		background: #ffffff31;
 	}
 	.cont-menu label{
 		position: absolute;
