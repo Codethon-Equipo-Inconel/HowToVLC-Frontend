@@ -1,12 +1,17 @@
 
-#recursos { flex-direction: column;}
+#recursos {
+  /* dimensiones */
+  width: 100%; max-width: 100%;
+  /* display y alineación */
+  display: flex; flex-direction: column;
+  justify-content: center; justify-items: center;
+}
 
-.recursos-container{width: 75%; margin: 0 auto;}
-.recursos-container *{max-width: 100%;}
-.recursos-container:first-child{ margin-top: 10vh; }
-.recursos-container { display: flex; }
 
-.seccion-recursos{ margin: 2vh auto; }
+
+/* seccion recursos --> ejemplo: gva y transporte */
+.seccion-recursos:first-of-type{ margin-top: 10vh !important; }
+.seccion-recursos{ margin: 0 8vw; }
 
 .seccion-recursos h2{ font-size: 2.5vw; }
 
@@ -18,10 +23,8 @@
   border-bottom: solid 5px var(--amarillo-main);
 }
 
+/* subseccion recursos --> ejemplo: metro, bus */
 .subseccion-recursos{ display: grid; grid-template-columns: repeat(2,1fr); gap: 2vw; }
-
-.bus{display: grid; grid-template-columns: repeat(2,1fr);}
-
 
 /* OTROS RECURSOS */
 /* todo: hacer otro componente con esta estructura */
@@ -38,7 +41,7 @@
   gap: 2vw;
 }
 
-.recurso-img-container img{border-radius: 1vw;}
+.otros-recursos .recurso-img-container img{border-radius: 1vw;}
 
 .otros-recursos .header-recurso * { max-height: 7.5vh; max-width: 7.5vw;}
 
@@ -64,3 +67,10 @@
 
 .otros-recursos .cuerpo-recurso p a:hover{ color: var(--amarillo-enfasis);}
 
+@media only screen and (max-width: 1023px) {
+
+  .subseccion-recursos {
+    margin-bottom: 6vh;
+  }
+
+}

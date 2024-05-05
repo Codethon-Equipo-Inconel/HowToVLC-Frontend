@@ -4,11 +4,11 @@
     <div class="recurso-img-container">
       <img [src]="linkFoto" alt="logo-{{ nombre }}">
     </div>
+
     <h2>{{ nombre }}</h2>
   </header>
 
   <main class="cuerpo-recurso">
-
     <h4 class="nombre-empresa">{{ empresa }}</h4>
     <p>Visita su web:
       <span class="linkWeb"><a [href]="web">{{ shortWeb }}</a></span>
@@ -21,9 +21,8 @@
       </li>
     </ul>
 
-    <p>Tlf: <span> {{ telefono }} </span></p>
-    <p>Contacto: <span> <a href="{{ contacto }}">{{ email }}</a></span>
-    </p>
+    <p class="bi bi-telephone-fill"> :<span> {{ telefono }}</span> </p>
+    <p> <i class="bi bi-envelope"></i>Contacto: <span><a href="{{ contacto }}">{{ email }}</a></span> </p>
 
   </main>
 
