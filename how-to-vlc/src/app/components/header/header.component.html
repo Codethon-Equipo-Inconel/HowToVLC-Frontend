@@ -3,31 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<title>header</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 	<link rel="stylesheet" href="header.component.css">
 </head>
 <body>
 	<header class="header">
 		<div class="container">
-		<div class="btn-menu">
-			<label for="btn-menu">☰</label>
-		</div>
-			<div class="logo">
-				<h1>Logotipo</h1>
+			<div class="btn-menu">
+				<label for="btn-menu">☰</label>
 			</div>
 		</div>
 	</header>
-	<div class="capa"></div>
+
+	<header class="header-mobile">
+        <div class="containerM">
+                <a href="#"><i class="fas fa-home"></i></a>
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-plus"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+        </div>
+    </header>
+
 <!--	--------------->
-<input type="checkbox" id="btn-menu">
+<input class="check" type="checkbox" id="btn-menu">
 <div class="container-menu">
 	<div class="cont-menu">
 		<nav>
-			<a href="#">Portafolio</a>
-			<a href="#">Servicios</a>
-			<a href="#">Suscribirse</a>
-			<a href="#">Facebook</a>
-			<a href="#">Youtube</a>
-			<a href="#">Instagram</a>
+			<a href="#">Inicio</a>
+			<a href="#">Eventos</a>
+			<a href="#">Rescursos</a>
+			<a href="#">Mapa</a>
+			<a href="#"> Perfil</a>
 		</nav>
 		<label for="btn-menu">✖️</label>
 	</div>
