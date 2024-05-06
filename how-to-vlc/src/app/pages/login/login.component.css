@@ -1,6 +1,7 @@
 /* -------------------------------------------------- FORMULARIO --------------------------------------------------- */
+form{ background-color: var(--item-background-semitransparent); backdrop-filter: blur(5px);}
 
-form, form *{background-color: var(--item-background); font-size: auto; text-wrap: nowrap;}
+form, form *{font-size: auto; text-wrap: nowrap;}
 
 .login-container{
     display: flex; justify-content: center; align-items: center;
@@ -15,13 +16,13 @@ form, form *{background-color: var(--item-background); font-size: auto; text-wra
     max-width: 100%; min-width: fit-content;
     /* display */
     display: grid; grid-template-columns: repeat(2, 1fr);
-    align-items: center; justify-content:space-between;
+    align-items: center; justify-content: space-between;
     /* separaciones */
     column-gap: 2vw;
     padding: 3.5vh 3vw 2.5vh 3vw;
     /* efectos: bordes y sombra */
-    border: solid var(--item-background) 2px; border-radius: 15px;
-    box-shadow: 0px 0px 25px 5px rgba(5, 5, 15, 0.75);
+    border: solid transparent 2px; border-radius: 15px;
+    box-shadow: 0px 0px 25px 5px var(--item-background-semitransparent);
 }
 
 /* Elementos del formulario */
@@ -40,8 +41,8 @@ form div input, form div select{
     /* texto */
     font-size: 1.2vw;
     /* color de fondo y bordes */
-    background-color: var(--subitem-background); 
-    border: solid var(--subitem-background) 1px; border-radius: 5px;
+    background-color: var(--subitem-background);
+    border: solid transparent 1px; border-radius: 5px;
     border-left-width: 10px; /* Añade un espacio más grande al principio entre el texto y el container del input */
 }
 

@@ -4,11 +4,11 @@
 
 :root{ /* ¡¡IMPORTANTE!! Variables para los colores, usar estas y añadir colores aquí */
     --background : #04031E;
-    --item-background-semitransparent : hsla(258, 48%, 19%, 0.502);
+    --item-background-semitransparent : hsla(258, 48%, 19%, 0.5);
     --item-background : #271948;
-    --subitem-background : #271948;
+    --subitem-background : #271948a1;
 
-    --amarillo-main : yellow;
+    --amarillo-main : rgb(255, 234, 0);
     --amarillo-enfasis : #826c00;
 
     --placeholder-item : #646076;
