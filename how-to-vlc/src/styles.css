@@ -123,6 +123,10 @@ body{ margin: 0; background-color: var(--background); }
     background-color: transparent; /* background */
 }
 
+.left-dashboard .greeting-area {
+  padding: 3vh 1vw;
+}
+
 /* DERECHA */
 
 .right-dashboard
@@ -156,6 +160,7 @@ body{ margin: 0; background-color: var(--background); }
     background-size: cover;
     column-gap: 0.5vw;
     padding: 2vh 1vw;
+    border-radius: 2.75vh !important;
 }
 
 .red-social h2, .red-social .section-header i{
