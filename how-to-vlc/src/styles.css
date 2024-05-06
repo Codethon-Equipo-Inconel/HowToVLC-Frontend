@@ -3,11 +3,12 @@
 /******************************************************* COLORES ******************************************************/
 
 :root{ /* ¡¡IMPORTANTE!! Variables para los colores, usar estas y añadir colores aquí */
-    --background : #0A0E3F;
-    --item-background : #39336a;
-    --subitem-background : #1e1c50;
+    --background : #04031E;
+    --item-background-semitransparent : hsla(258, 48%, 19%, 0.502);
+    --item-background : #271948;
+    --subitem-background : #271948;
 
-    --amarillo-main : #ffcd07;
+    --amarillo-main : yellow;
     --amarillo-enfasis : #826c00;
 
     --placeholder-item : #646076;
@@ -113,7 +114,7 @@ body{ margin: 0; background-color: var(--background); }
 
 .left-dashboard .dashboard-items-container /* items que contienen otros items */
 {
-    background-color: var(--item-background);
+    background-color: var(--item-background-semitransparent);
     padding: 2vh 1vw;
 }
 

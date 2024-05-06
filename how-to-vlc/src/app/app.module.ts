@@ -16,6 +16,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { GalleryComponent } from './pages/eventos/componentes/gallery/gallery.component';
 import { LocalidadesServicesService } from './services/localidades-services.service';
 import { RegisterComponent } from './pages/register/register.component';
+import { GradientComponent } from './components/gradient/gradient.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { RegisterComponent } from './pages/register/register.component';
     PerfilComponent,
     GalleryComponent,
     RegisterComponent,
+    GradientComponent,
   ],
   imports: [
     BrowserModule,
