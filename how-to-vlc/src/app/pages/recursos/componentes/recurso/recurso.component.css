@@ -88,3 +88,27 @@
   }
 
 }
+
+@media only screen and (max-width: 720px) {
+
+  .recurso{ height: auto; }
+
+  .recurso .header-recurso h2 { font-size: 5vw; margin: 1vh 0; }
+
+  .recurso .cuerpo-recurso h4,
+  .recurso .cuerpo-recurso ul
+  { font-size: 3vw; margin: 1vh 0; }
+
+  .recurso .cuerpo-recurso ul li{ font-size: 2.5vw; }
+
+  .recurso .cuerpo-recurso p,
+  .cuerpo-recurso p i,
+  .recurso .footer-recurso p {
+    font-size: 2.5vw;
+  }
+
+  .recurso .footer-recurso { min-height: fit-content; }
+
+  .recurso .footer-recurso a { height: 75%; }
+
+}
