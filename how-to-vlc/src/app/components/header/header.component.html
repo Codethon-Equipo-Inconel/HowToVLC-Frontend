@@ -1,43 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>header</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-	<link rel="stylesheet" href="header.component.css">
-</head>
-<body>
-	<header class="header">
-		<div class="container">
-			<div class="btn-menu">
-				<label for="btn-menu">☰</label>
-			</div>
-		</div>
-	</header>
+<header class="header">
+  <div class="container">
+    <div class="btn-menu">
+      <label for="btn-menu">☰</label>
+    </div>
+  </div>
+</header>
 
-	<header class="header-mobile">
-        <div class="containerM">
-                <a routerLink="dashboard"><i class="fas fa-home"></i></a>
-                <a routerLink="eventos"><i class="fas fa-search"></i></a>
-                <a routerLink="recursos"><i class="fas fa-plus"></i></a>
-                <a routerLink="mapa"><i class="fas fa-heart"></i></a>
-                <a routerLink="perfil"><i class="fas fa-user"></i></a>
-        </div>
-    </header>
+<header class="header-mobile">
+  <div class="containerM">
+    <a routerLink="dashboard"><i class="bi bi-house-fill"></i></a>
+    <a routerLink="eventos"><i class="bi bi-calendar"></i></a>
+    <a routerLink="recursos"><i class="bi bi-link-45deg"></i></a>
+    <a routerLink="mapa"><i class="bi bi-map-fill"></i></a>
+    <a routerLink="perfil"><i class="bi bi-person-circle"></i></a>
+  </div>
+</header>
 
-<!--	--------------->
+
 <input class="check" type="checkbox" id="btn-menu">
 <div class="container-menu">
-	<div class="cont-menu">
-		<nav>
-			<a routerLink="dashboard">Inicio</a>
-			<a routerLink="eventos">Eventos</a>
-			<a routerLink="recursos">Rescursos</a>
-			<a routerLink="mapa">Mapa</a>
-			<a routerLink="perfil"> Perfil</a>
-		</nav>
-		<label for="btn-menu">✖️</label>
-	</div>
+  <div class="cont-menu">
+    <nav>
+      <a routerLink="dashboard">Inicio</a>
+      <a routerLink="eventos">Eventos</a>
+      <a routerLink="recursos">Rescursos</a>
+      <a routerLink="mapa">Mapa</a>
+      <a routerLink="perfil"> Perfil</a>
+    </nav>
+    <label for="btn-menu">✖️</label>
+  </div>
 </div>
-</body>
-</html>
