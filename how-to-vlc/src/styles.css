@@ -142,8 +142,8 @@ body{ margin: 0; background-color: var(--background); }
 
 .right-dashboard .dashboard-items-container /* items que contienen otros items */
 {
-    background-color: var(--item-background);
-    border: solid var(--item-background) 15px; border-radius: 2vh;
+    background-color: var(--item-background-semitransparent);
+    /* border: solid var(--item-background) 15px; */ border-radius: 2vh;
 }
 
 .right-dashboard .container .item /* items individuales */
@@ -157,7 +157,7 @@ body{ margin: 0; background-color: var(--background); }
 .red-social{
     overflow: auto; /* overflow: que no se pase del container */
     height: 75vh;
-    background-image: url(assets/img/ciudad-artes-ciencias.avif);
+/*     background-image: url(assets/img/ciudad-artes-ciencias.avif); */
     background-size: cover;
     column-gap: 0.5vw;
     padding: 2vh 1vw;
