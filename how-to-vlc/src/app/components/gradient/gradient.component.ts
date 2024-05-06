@@ -21,7 +21,7 @@ export class GradientComponent implements OnInit, OnDestroy {
   private colorIndices = [0, 1, 2, 3];
   private gradientSpeed = 0.005; // Velocidad de transición
 
-  // Paleta de colores con el magenta ajustado a un tono menos claro
+  // Paleta de colores
   private colors = [
     [3, 4, 33], // Azul muy oscuro (#030421)
     [200, 30, 200], // Magenta (RGB: 200, 0, 200)
