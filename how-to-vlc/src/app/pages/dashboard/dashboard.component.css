@@ -41,7 +41,7 @@
     /* dimensiones */
     grid-template-columns: repeat(5, 1fr);
     /* estructura */
-    align-items: center; 
+    align-items: center;
     margin: 0 auto;
     /* alineación */
     border: solid transparent 2vw;
@@ -94,6 +94,11 @@
         height: fit-content !important;
     }
 
+    .red-social form{
+      padding-bottom: 3vh;
+      border-bottom: solid white 0.2vh;
+    }
+
     .red-social h2, .red-social .section-header i{
         font-size: 4.5vw; text-wrap: nowrap;
     }
@@ -106,7 +111,7 @@
         font-size: 2.5vw;
     }
 
-    .red-social input, .red-social select, .red-social form textarea{ 
+    .red-social input, .red-social select, .red-social form textarea{
         width: 100%;
     }
 
@@ -115,7 +120,7 @@
     }
 
     .red-social .img-link-seccion{
-        height: fit-content !important; 
+        height: fit-content !important;
     }
 
     .red-social .button{

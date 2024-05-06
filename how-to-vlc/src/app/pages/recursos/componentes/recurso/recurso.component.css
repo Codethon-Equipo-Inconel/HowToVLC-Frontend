@@ -20,8 +20,10 @@
   display: flex;  align-items: center;
   flex-direction: row;
   gap: 2vw; padding-bottom: 1vw;
-  border-bottom: solid 3px white;
+  border-bottom: solid 0.2vh white;
 }
+
+.recurso-img-container{ display: flex; align-items: center; }
 
 .recurso-img-container img { border-radius: 1vw; }
 
@@ -74,10 +76,15 @@
 .recurso .cuerpo-recurso p a:hover{ color: var(--amarillo-enfasis);}
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1080px) {
 
   .recurso {
     gap: 0px;
+    height: 80%;
+  }
+
+  .recurso .header-recurso {
+    height: fit-content;
   }
 
 }

@@ -24,7 +24,7 @@
 }
 
 /* subseccion recursos --> ejemplo: metro, bus */
-.subseccion-recursos{ display: grid; grid-template-columns: repeat(2,1fr); gap: 2vw; }
+.subseccion-recursos{ display: grid; grid-template-columns: repeat(2,1fr); gap: 2vw; border-bottom: solid transparent 10vh;}
 
 /* OTROS RECURSOS */
 /* todo: hacer otro componente con esta estructura */
@@ -67,10 +67,11 @@
 
 .otros-recursos .cuerpo-recurso p a:hover{ color: var(--amarillo-enfasis);}
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1080px) {
 
   .subseccion-recursos {
-    margin-bottom: 6vh;
+    border-bottom: 0vh;
   }
+
 
 }
