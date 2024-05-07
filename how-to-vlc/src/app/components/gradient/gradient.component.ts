@@ -24,10 +24,10 @@ export class GradientComponent implements OnInit, OnDestroy {
   // Paleta de colores
   private colors = [
     [3, 4, 33], // Azul muy oscuro (#030421)
-    [200, 30, 200], // Magenta (RGB: 200, 0, 200)
+    [3, 4, 33], // Magenta (RGB: 200, 0, 200)
     [38, 26, 75], // Morado oscuro (#261A4B)
     [75, 0, 130], // Índigo (#4B0082)
-    [255, 105, 180], // Rosa suave (#FF69B4)
+    [3, 4, 33], // Rosa suave (#FF69B4)
     [70, 100, 180], // Azul suave (#4682B4)
   ];
 
@@ -35,9 +35,9 @@ export class GradientComponent implements OnInit, OnDestroy {
   private canvas: HTMLCanvasElement | null = null;
   private ctx: CanvasRenderingContext2D | null = null;
   private balls: any[] = [];
-  private numBalls = 10; // Número de bolas
-  private ballRadius = 20; // Radio de las bolas
-  private speed = 0.5; // Velocidad de las bolas (ajustada a un valor más bajo)
+  private numBalls = 15; // Número de bolas
+  private ballRadius = 40; // Radio de las bolas
+  private speed = 0.2; // Velocidad de las bolas (ajustada a un valor más bajo)
 
   constructor(private renderer: Renderer2) {}
 
@@ -69,7 +69,7 @@ export class GradientComponent implements OnInit, OnDestroy {
         y: Math.random() * this.canvas!.height,
         dx: Math.random() < 0.5 ? this.speed : -this.speed,
         dy: Math.random() < 0.5 ? this.speed : -this.speed,
-        color: `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 0.5)` // Color aleatorio con transparencia
+        color: `rgba(${Math.random() * 100}, ${Math.random() * 100}, ${Math.random() * 100}, 0.6)` // Color aleatorio con transparencia
       });
     }
   }
@@ -79,7 +79,7 @@ export class GradientComponent implements OnInit, OnDestroy {
     this.ctx!.clearRect(0, 0, this.canvas!.width, this.canvas!.height);
 
     // Aplica desenfoque al contexto del canvas
-    this.ctx!.filter = 'blur(10px)'; // Ajusta el valor de blur según sea necesario
+    this.ctx!.filter = 'blur(8px)'; // Ajusta el valor de blur según sea necesario
 
     // Dibuja las bolas
     for (const ball of this.balls) {
