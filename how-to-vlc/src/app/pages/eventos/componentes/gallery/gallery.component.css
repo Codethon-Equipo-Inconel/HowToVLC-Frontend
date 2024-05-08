@@ -7,7 +7,7 @@
 .gallery {
   display: flex;
   padding: 1vh 0;
-  background-color: var(--item-background);
+  background-color: var(--item-background-semitransparent);
 }
 
 .image {

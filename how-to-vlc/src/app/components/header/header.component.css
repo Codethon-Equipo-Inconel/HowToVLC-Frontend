@@ -113,7 +113,7 @@
   .container-menu {
     position: absolute;
     background-color: var(--item-background-semitransparent);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
     width: 15%;
     height: 100vh;
     top: 0;
@@ -130,7 +130,7 @@
 
   .cont-menu {
     height: 100vh;
-    width: 15%;
+    width: 100%;
     position: relative;
     transition: all 500ms ease;
     transform: translateX(-100%);
