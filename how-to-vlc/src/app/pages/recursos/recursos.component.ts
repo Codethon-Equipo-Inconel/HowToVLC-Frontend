@@ -53,8 +53,8 @@ export class RecursosComponent {
     web: 'https://www.metrovalencia.es',
     shortWeb: 'metrovalencia.es',
     telefono: '900 461 046',
-    email: '',
-    contacto: '',
+    email: 'metrovalencia.es/es/atencion-al-cliente',
+    contacto: 'https://www.metrovalencia.es/es/atencion-al-cliente/',
     ofrece: [
       'Consulta los horarios de los metros',
       'Consulta cuántos viajes te quedan en la tarjeta',

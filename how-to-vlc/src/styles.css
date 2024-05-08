@@ -4,7 +4,7 @@
 
 :root{ /* ¡¡IMPORTANTE!! Variables para los colores, usar estas y añadir colores aquí */
     --background : #04031E;
-    --item-background-semitransparent : hsla(258, 48%, 19%, 0.5);
+    --item-background-semitransparent : hsla(258, 48%, 19%, 0.6);
     --item-background : #271948;
     --subitem-background : #271948a1;
 
@@ -61,8 +61,7 @@ body{ margin: 0; background-color: var(--background); }
 
     border-radius: 2vh; /* borde */
 
-    transition: ease-in-out 250ms 50ms;
-
+    transition: ease-in-out 200ms 50ms;
 }
 
 .dashboard-items-container /* items que contienen otros items */
@@ -77,7 +76,6 @@ body{ margin: 0; background-color: var(--background); }
     height: 10vh; max-width: 100%; /* dimensiones */
     border-radius: 2vh; /* borde */
     align-content: space-around; align-self: center; /* alineación */
-
 }
 
 .section-container{

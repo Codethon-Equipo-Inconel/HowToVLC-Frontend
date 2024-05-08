@@ -1,153 +1,169 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
-	*{
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		font-family: 'Montserrat Alternates', sans-serif;
-        z-index: 999;
-	}
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap'); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* 		font-family: 'Montserrat Alternates', sans-serif; */
+  z-index: 999;
+}
 
-	/*Movil*/
-	@media screen and (max-width: 767px) {
-		.header, .container-menu, .check {
-			display: none;
-		}
-	
-		.header-mobile {
-        width: 100%;
-        height: 80px;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        background-color: #1c1c1c;
-        z-index: 9999;
-    }
+/* Movil */
+@media screen and (max-width: 767px) {
 
-    .header-mobile .containerM {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
+  .header,
+  .container-menu,
+  .check {
+    display: none;
+  }
 
-	.header-mobile .containerM a {
-        color: #fff;
-        font-size: 20px;
-        text-decoration: none;
-        width: 20%;
-        text-align: center;
-        transition: color 0.3s ease;
-        transition: transform 0.3s ease; /* Agregamos una transición de transformación */
-    }
+  .header-mobile {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #1c1c1c;
+    z-index: 9999;
+  }
 
-    .header-mobile .containerM a:hover {
-        transform: scale(1.1);
-    }
+  .header-mobile .containerM {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .header-mobile .containerM a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    width: 20%;
+    text-align: center;
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
+    /* Agregamos una transición de transformación */
+  }
+
+  .header-mobile .containerM a:hover {
+    transform: scale(1.1);
+  }
 }
 
 
-	/*PC*/
-	@media screen and (min-width: 768px) {
+/* PC */
+@media screen and (min-width: 768px) {
 
-	.header-mobile{
-		display: none;
-	}
+  .header-mobile {
+    display: none;
+  }
 
-	.header{
-		width: 100%;
-		height: 100px;
-		position: fixed;
-		top: 0;left: 0;
-	}
-	.container{
-		width: 90%;
-		max-width: 1200px;
-		margin: auto;
-	}
-	.container .btn-menu{
-		float: left;
-		line-height:100px;
-		margin-left: -40px;
-	}
-	.container .btn-menu label{
-		color: #fff;
-		font-size: 25px;
-		cursor: pointer;
-	}
-	
-	.container .menu{
-		float: right;
-		line-height: 100px;
-	}
-	.container .menu a{
-		display: inline-block;
-		padding: 15px;
-		line-height: normal;
-		text-decoration: none;
-		color: #fff;
-		transition: all 0.3s ease;
-		border-bottom: 2px solid transparent;
-		font-size: 15px;
-		margin-right: 5px;
-	}
-	.container .menu a:hover{
-		border-bottom: 2px solid #c7c7c7;
-		padding-bottom: 5px;
-	}
-	
-	#btn-menu{
-		display: none;
-	}
-	.container-menu{
-		position: absolute;
-		background: rgba(0, 0, 0, 0.068);
-		width: 100%;
-		height: 100vh;
-		top: 0;left: 0;
-		transition: all 500ms ease;
-		opacity: 0;
-		visibility: hidden;
-	}
-	#btn-menu:checked ~ .container-menu{
-		opacity: 1;
-		visibility: visible;
-	}
-	.cont-menu{
-		width: 100%;
-		max-width: 250px;
-		background: #1c1c1cb7;
-		height: 100vh;
-		position: relative;
-		transition: all 500ms ease;
-		transform: translateX(-100%);
-        position: fixed;
-	}
-	#btn-menu:checked ~ .container-menu .cont-menu{
-		transform: translateX(0%);
-	}
-	.cont-menu nav{
-		transform: translateY(15%);
-	}
-	.cont-menu nav a{
-		display: block;
-		text-decoration: none;
-		padding: 20px;
-		color: #ffffff;
-		border-left: 5px solid transparent;
-		transition: all 400ms ease;
-	}
-	.cont-menu nav a:hover{
-		border-left: 5px solid #c7c7c7;
-		background: #ffffff31;
-	}
-	.cont-menu label{
-		position: absolute;
-		right: 5px;
-		top: 10px;
-		color: #fff;
-		cursor: pointer;
-		font-size: 18px;
-	}
+  .header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .container .btn-menu {
+    float: left;
+    line-height: 100px;
+    margin-left: -40px;
+  }
+
+  .container .btn-menu label {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .container .menu {
+    float: right;
+    line-height: 100px;
+  }
+
+  .container .menu a {
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+  }
+
+  .container .menu a:hover {
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+  }
+
+  #btn-menu {
+    display: none;
+  }
+
+  .container-menu {
+    position: absolute;
+    background-color: var(--item-background-semitransparent);
+    backdrop-filter: blur(5px);
+    width: 15%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #btn-menu:checked~.container-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .cont-menu {
+    height: 100vh;
+    width: 15%;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+    position: fixed;
+  }
+
+  #btn-menu:checked~.container-menu .cont-menu {
+    transform: translateX(0%);
+  }
+
+  .cont-menu nav {
+    transform: translateY(15%);
+  }
+
+  .cont-menu nav a {
+    display: block;
+    padding: 20px;
+    color: #ffffff; font-size: 1.5vw;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+  }
+
+  .cont-menu nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #ffffff31;
+  }
+
+  .cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+  }
 }
-    

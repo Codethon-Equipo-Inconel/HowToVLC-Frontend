@@ -1,57 +1,58 @@
 /* pseudo bootstrap improvisado */
 
 .left-dashboard .full-size {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .right-dashboard .full-size {
-    grid-column-start: 1;
-    grid-column-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 .four-items {
-    grid-template-columns: repeat(4, 1fr) !important;
+  grid-template-columns: repeat(4, 1fr) !important;
 }
 
 .three-items {
-    grid-template-columns: repeat(3, 1fr) !important;
+  grid-template-columns: repeat(3, 1fr) !important;
 }
 
 .two-items {
-    grid-template-columns: repeat(2, 1fr) !important;
+  grid-template-columns: repeat(2, 1fr) !important;
 }
 
 .one-item {
-    grid-template-columns: repeat(1, 1fr) !important;
-    text-align: center;
+  grid-template-columns: repeat(1, 1fr) !important;
+  text-align: center;
 }
 
 /* todo es un grid con sus elementos centrados */
 .dashboard-container,
 .dashboard-container *,
 .dashboard-item {
-    display: grid;
-    justify-content: center; align-items: baseline;
+  display: grid;
+  justify-content: center;
+  align-items: baseline;
 }
 
 /* estilos para el container del dashboard */
 .dashboard-container {
-    min-height: fit-content;
-    /* dimensiones */
-    grid-template-columns: repeat(5, 1fr);
-    /* estructura */
-    align-items: center;
-    margin: 0 auto;
-    /* alineación */
-    border: solid transparent 2vw;
-    /* separaciones */
+  min-height: fit-content;
+  /* dimensiones */
+  grid-template-columns: repeat(5, 1fr);
+  /* estructura */
+  align-items: center;
+  margin: 0 auto;
+  /* alineación */
+  border: solid transparent 2vw;
+  /* separaciones */
 }
 
 /* margen para las divisiones left y right, las separa del borde y entre ellas */
 .left-dashboard,
 .dashboard-container .right-dashboard {
-    margin: 1vh 2vw;
+  margin: 1vh 2vw;
 }
 
 /* gap y alineación para los containers left-right y subcontainers */
@@ -59,73 +60,82 @@
 .left-dashboard .container,
 .right-dashboard,
 .right-dashboard .container {
-    gap: 2vh 2vw;
-    justify-content: center;
-    min-height: fit-content;
+  gap: 2vh 2vw;
+  justify-content: center;
+  min-height: fit-content;
 }
 
 /* media queries */
 
 @media only screen and (max-width: 1023px) {
 
-    .dashboard-container {
-        row-gap: 5vh;
-    }
+  .dashboard-container {
+    row-gap: 5vh;
+  }
 
-    .dashboard-container:first-child {
-        margin-top: 5vh;
-    }
+  .dashboard-container:first-child {
+    margin-top: 5vh;
+  }
 
-    .left-dashboard {
-        margin: auto 5vw;
+  .left-dashboard {
+    margin: auto 5vw;
 
-        grid-column-start: 1; grid-column-end: 6;
-        grid-row-start: 1; grid-row-end: 2;
-    }
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 
-    .right-dashboard {
-        grid-column-start: 1; grid-column-end: 6;
-        grid-row-start: 2; grid-row-end: 3;
-        row-gap: 5vh;
-    }
+  .right-dashboard {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    row-gap: 5vh;
+  }
 
-    .red-social{
-        grid-template-columns: repeat(1, 1fr) !important;
-        height: fit-content !important;
-    }
+  .red-social {
+    grid-template-columns: repeat(1, 1fr) !important;
+    height: fit-content !important;
+  }
 
-    .red-social form{
-      padding-bottom: 3vh;
-      border-bottom: solid white 0.2vh;
-    }
+  .red-social form {
+    padding-bottom: 3vh;
+    border-bottom: solid white 0.2vh;
+  }
 
-    .red-social h2, .red-social .section-header i{
-        font-size: 4.5vw; text-wrap: nowrap;
-    }
+  .red-social h2,
+  .red-social .section-header i {
+    font-size: 4.5vw;
+    text-wrap: nowrap;
+  }
 
-    .red-social h3{
-        font-size: 3vw;
-    }
+  .red-social h3 {
+    font-size: 3vw;
+  }
 
-    .red-social label{
-        font-size: 2.5vw;
-    }
+  .red-social label {
+    font-size: 2.5vw;
+  }
 
-    .red-social input, .red-social select, .red-social form textarea{
-        width: 100%;
-    }
+  .red-social input,
+  .red-social select,
+  .red-social form textarea {
+    width: 100%;
+  }
 
-    .red-social *::placeholder, .red-social form textarea{
-        padding: 1vw;
-    }
+  .red-social *::placeholder,
+  .red-social form textarea {
+    padding: 1vw;
+  }
 
-    .red-social .img-link-seccion{
-        height: fit-content !important;
-    }
+  .red-social .img-link-seccion {
+    height: fit-content !important;
+  }
 
-    .red-social .button{
-        width: 25vw;
-    }
+  .red-social .button {
+    width: 25vw;
+  }
 
 
 }
