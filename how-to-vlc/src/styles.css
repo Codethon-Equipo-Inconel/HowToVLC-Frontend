@@ -3,7 +3,7 @@
 /******************************************************* COLORES ******************************************************/
 
 :root{ /* ¡¡IMPORTANTE!! Variables para los colores, usar estas y añadir colores aquí */
-    --background : #04031E;
+    --background : #080735;
     --item-background-semitransparent : hsla(258, 48%, 19%, 0.6);
     --item-background : #271948;
     --subitem-background : #271948a1;
@@ -27,7 +27,7 @@
 
 /******************************************************* BODY ******************************************************/
 
-body{ margin: 0; background-color: var(--background); }
+body{ margin: 0; }
 
 /******************************************************* DASHBOARD ******************************************************/
 

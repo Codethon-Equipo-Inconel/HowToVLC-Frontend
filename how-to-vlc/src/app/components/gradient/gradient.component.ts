@@ -5,6 +5,7 @@ import { Component, OnInit, OnDestroy, Renderer2 } from '@angular/core';
   template: '<canvas #backgroundCanvas class="background-canvas"></canvas>',
   styles: [`
     .background-canvas {
+      background-color: var(--background);
       position: fixed;
       top: 0;
       left: 0;
