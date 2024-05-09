@@ -103,4 +103,24 @@
 #login form .no-login:hover{ color: var(--amarillo-main); }
 
 #login form .no-login:active{ color: #005180; }
-/* ------------------------------------------------ FIN FORMULARIO ------------------------------------------------ */
+
+@media screen and (max-width: 767px) {
+
+  .login-form div input, .login-form div select{
+    font-size: 2.5vw;
+    min-width: 1px; width: 80%;
+  }
+
+  .login-form label{
+    font-size: 2.55vw;
+  }
+
+  #login form .mensaje, #login form .asterisco, #login form .no-login{
+    font-size: 1.75vw;
+  }
+
+  #login .submit-button{
+    font-size: 2vw;
+  }
+
+}
