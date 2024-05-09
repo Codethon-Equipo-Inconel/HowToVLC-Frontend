@@ -8,7 +8,7 @@
 }
 
 /* Movil */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 850px) {
 
   .header,
   .container-menu,
@@ -22,7 +22,8 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: #1c1c1c;
+    background-color: var(--item-background-semitransparent);
+    backdrop-filter: blur(4px);
     z-index: 9999;
   }
 
@@ -32,6 +33,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .containerM i{
+    font-size: 22px;
   }
 
   .header-mobile .containerM a {

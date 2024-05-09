@@ -1,88 +1,29 @@
-/* -
--*-~*~-*-*-~*~-*-*-~*~* |
-●▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬●
-Made by ~
-Areal Alien ❥ 雷克斯
-●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●
-──────▄▀▄─────▄▀▄
-─────▄█░░▀▀▀▀▀░░█▄
-─▄▄──█░░░░░░░░░░░█──▄▄
-█▄▄█─█░░▀░░┬░░▀░░█─█▄▄█
--*-~*~-*-*-~*~-*-*-~*~* |
-- */
-/*
-
-   ===================
-    Table of contents
-   ===================
-
-    1. Imports
-    2. Global styles
-        2.1 Typography
-        2.2 Buttons
-        2.3 Lists
-        2.4 Forms
-    3. Classes
-        3.1 Global Classes
-            3.1.1 Flexbox
-        3.2 Classes
-            3.2.1 Navbar
-            3.2.2 Header
-            3.2.3 Main
-                3.2.3.1 Profile Page
-            3.2.4 Footer
-    4. ::Selectors
-    5. @Keyframes
-    6. @Media Rules
-        6.1 max-width: 1660px
-        6.2 max-width: 1456px
-        6.3 max-width: 1220px
-        6.4 max-width: 1024px
-        6.5 max-width: 756px
-        6.6 max-width: 576px
-        6.7 max-width: 496px
-
-*/
-
-/* ============
-    1. Imports
-   ============ */
-
-   :root {
-    /* Main */
-    --primary: 300, 92%, 48%;
-    --secondary: 178, 100%, 40%;
-    --tertiary: 201, 96%, 71%;
-    --background: 240, 4%, 3%;
-    --text-primary: 0, 0%, 100%;
-    /* Colors */
-    --black: 0, 0%, 0%;
-    --white: 0, 0%, 100%;
-    --grooble: 233, 3%, 48%;
-    --red: 347, 84%, 68%;
-    --orange: 23, 84%, 68%;
-    --yellow: 52, 84%, 68%;
-    --green: 114, 84%, 68%;
-    --teal: 163, 84%, 68%;
-    --blue: 219, 84%, 68%;
-    --purple: 279, 84%, 68%;
-    --pink: 312, 84%, 68%;
-    /* Gradients */
-    --gradient: linear-gradient(90deg, hsla(var(--primary), 1) 0%, hsla(var(--secondary), 1) 50%, hsla(var(--tertiary), 1) 100%);
-    /* Sizes */
-    --heading-large: 5.6rem;
-    --heading-medium: 3.6rem;
-    --heading-small: 2.4rem;
-    --paragraph: 1.2rem;
-    /* Transitions */
-    --transition-main: .175, .685, .32;
-    /* Fonts */
-    --font-main: "Poppins";
+.image {
+    display: inline-block;
+    position: relative;
+    margin: 1%;
+    width: 31.3%;
+}
+ .image img { 
+    height: auto;
+    width: 100%; 
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.overlay:hover {
+    opacity: 1;
+}
+.overlay img{
+    height: auto;
+    width: 100%;
 }
 
-/* ==================
-    2. Global Styles
-   ================== */
+
 
 *, *::before, *::after {
     box-sizing: inherit;
@@ -98,11 +39,7 @@ html, body {
     box-sizing: border-box;
 }
 
-/* ================
-    2.1 Typography
-   =============== */
 
-/* Headings */
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     color: hsl(var(--text-primary));
@@ -115,7 +52,9 @@ h2 {
     font-size: var(--heading-medium);
 }
 h3 {
-    font-size: var(--heading-small);
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 h4 {
     font-size: calc(var(--heading-small) - .2rem);
@@ -126,20 +65,20 @@ h5 {
 h6 {
     font-size: calc(var(--heading-small) - .6rem);
 }
-/* Font Weight */
+
 h1, h2 {
     font-weight: 900;
 }
 h3, h4, h5, h6 {
     font-weight: 800;
 }
-/* Paragraphs */
+
 p {
     margin: 0;
     color: hsl(var(--text-primary));
     font-size: var(--paragraph);
 }
-/* Links */
+
 a {
     color: hsla(var(--primary), 1);
     font-size: var(--paragraph);
@@ -149,9 +88,7 @@ a:visited {
     color: hsla(var(--primary), .5);
 }
 
-/* =============
-    2.2 Buttons
-   ============= */
+
 
 button {
     padding: .8em 1.2em;
@@ -222,17 +159,13 @@ button:focus {
     margin: 0 .5em .075em 0;
 }
 
-/* ===========
-    2.3 Lists
-   =========== */
+
 
 ul, ol {
     margin: 1em 0;
 }
 
-/* ===========
-    2.4 Forms
-   =========== */
+
 
 form {
     margin: 0;
@@ -273,22 +206,14 @@ select {
     outline: none;
 }
 
-/* ============
-    3. Classes
-   ============ */
+
 
 .material-icons-round {
     user-select: none;
     cursor: default;
 }
 
-/* ====================
-    3.1 Global classes
-   ==================== */
 
-/* ===============
-    3.1.1 Flexbox
-   =============== */
 
 .flexbox {
     display: flex;
@@ -305,7 +230,7 @@ select {
     justify-content: flex-end;
     align-items: center;
 }
-/* Columns */
+
 .flexbox-col {
     display: flex;
     justify-content: center;
@@ -342,42 +267,19 @@ select {
     flex-direction: column;
     align-items: center;
 }
-/* Spacings */
+
 .flexbox-space-bet {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* ===============
-    3.2 Classes
-   =============== */
 
 .view-width {
     width: 70%;
 }
 
-/* ==============
-    3.2.1 Navbar
-   ============== */
 
-/* ==============
-    3.2.2 Header
-   ============== */
-
-/* ============
-    3.2.3 Main
-   ============ */
-
-#main {
-    min-height: 110vh;
-}
-
-/* ======================
-    3.2.3.1 Profile Page
-   ====================== */
-
-/* Profile Header */
 .profile-header {
     width: 100%;
     position: relative;
@@ -419,7 +321,7 @@ select {
     gap: 2em;
     z-index: 5;
 }
-/* Profile Info */
+
 .phi-info-wrapper {
     padding: 4em 4em 8em 4em;
     width: 100%;
@@ -428,7 +330,7 @@ select {
     gap: 2em;
     z-index: 5;
 }
-/* Profile Picture */
+
 .phi-profile-picture-wrapper {
     width: 10em;
     height: 10em;
@@ -459,366 +361,4 @@ select {
     filter: blur(1rem) hue-rotate(-5deg) saturate(1.25);
 }
 
-/* Profile Username */
-.phi-profile-username-wrapper {
 
-}
-.phi-profile-username span {
-    margin: 0 0 0 .3em;
-}
-.phi-profile-tagline {
-    color: hsl(var(--grooble));
-}
-
-/* Profile Page */
-.profile-page {
-    margin: 10em 0;
-}
-.profile-page > h3 {
-    font-size: var(--paragraph);
-    text-transform: uppercase;
-}
-.profile-page-inner {
-    margin: 1.5em 0;
-    display: flex;
-    flex-wrap: wrap;
-    grid-gap: 0;
-}
-.profile-page-item {
-    margin: 0;
-    height: 30vh;
-    flex-grow: 1;
-    position: relative;
-    cursor: pointer;
-}
-.profile-page-item-image {
-    max-height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-}
-
-/* ==============
-    3.2.4 Footer
-   ============== */
-
-/* ================
-    4. ::Selectors
-   ================ */
-
-/* Selection */
-::selection {
-    color: hsl(var(--white));
-    background: hsla(var(--primary), .33);
-}
-/* Scrollbar */
-::-webkit-scrollbar-track {
-    background-color: hsl(var(--background));
-}
-::-webkit-scrollbar {
-    width: 8px;
-    background-color: hsl(var(--background));
-}
-::-webkit-scrollbar-thumb {
-    background-color: hsl(var(--primary));
-}
-
-/* ===============
-    5. @keyframes
-   =============== */
-
-/* =================
-    6. @media rules
-   ================= */
-
-/* =======================
-    6.1 max-width: 1660px
-   ======================= */
-
-@media only screen and (max-width: 1660px) {
-    :root {
-        /* Sizes */
-        --heading-large: 5.4rem;
-        --heading-medium: 3.4rem;
-        --heading-small: 2.2rem;
-    }
-
-    /* ===============
-        3.2 Classes
-       =============== */
-
-    /* ==============
-        3.2.1 Navbar
-       ============== */
-
-    /* ==============
-        3.2.2 Header
-       ============== */
-
-    /* ============
-        3.2.3 Main
-       ============ */
-
-    /* ======================
-        3.2.3.1 Profile Page
-       ====================== */
-
-    /* ==============
-        3.2.4 Footer
-       ============== */
-
-}
-
-/* =======================
-    6.2 max-width: 1456px
-   ======================= */
-
-@media only screen and (max-width: 1456px) {
-    :root {
-        /* Sizes */
-        --heading-large: 5.2rem;
-        --heading-medium: 3.2rem;
-        --heading-small: 2rem;
-    }
-
-    /* ===============
-        3.2 Classes
-       =============== */
-
-    .view-width {
-        width: 80%;
-    }
-
-    /* ==============
-        3.2.1 Navbar
-       ============== */
-
-    /* ==============
-        3.2.2 Header
-       ============== */
-
-    /* ============
-        3.2.3 Main
-       ============ */
-
-    /* ======================
-        3.2.3.1 Profile Page
-       ====================== */
-
-    /* ==============
-        3.2.4 Footer
-       ============== */
-
-}
-
-/* =======================
-    6.3 max-width: 1220px
-   ======================= */
-
-@media only screen and (max-width: 1220px) {
-
-    /* ===============
-        3.2 Classes
-       =============== */
-
-    .view-width {
-        width: 70%;
-    }
-
-    /* ==============
-        3.2.1 Navbar
-       ============== */
-
-    /* ==============
-        3.2.2 Header
-       ============== */
-
-    /* ============
-        3.2.3 Main
-       ============ */
-
-    /* ======================
-        3.2.3.1 Profile Page
-       ====================== */
-
-    /* ==============
-        3.2.4 Footer
-       ============== */
-
-}
-
-/* =======================
-    6.4 max-width: 1024px
-   ======================= */
-
-@media only screen and (max-width: 1024px) {
-    :root {
-        /* Sizes */
-        --heading-large: 5rem;
-        --heading-medium: 3rem;
-        --heading-small: 1.8rem;
-    }
-
-    /* ===============
-        3.2 Classes
-       =============== */
-
-    .view-width {
-        width: 75%;
-    }
-
-    /* ==============
-        3.2.1 Navbar
-       ============== */
-
-    /* ==============
-        3.2.2 Header
-       ============== */
-
-    /* ============
-        3.2.3 Main
-       ============ */
-
-    /* ======================
-        3.2.3.1 Profile Page
-       ====================== */
-  
-    /* Profile Info */
-    .phi-info-wrapper {
-        grid-template-columns: auto;
-        place-items: center;
-        gap: 2em;
-    }
-    .phi-info-right {
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* ==============
-        3.2.4 Footer
-       ============== */
-
-}
-
-/* ======================
-    6.5 max-width: 756px
-   ====================== */
-
-@media only screen and (max-width: 756px) {
-    :root {
-        /* Sizes */
-        --heading-large: 4rem;
-        --heading-medium: 2.6rem;
-        --heading-small: 1.6rem;
-        --paragraph: 1rem;
-        --navbar-buttons: 2rem;
-    }
-
-    /* ===============
-        3.2 Classes
-       =============== */
-
-    .view-width {
-        width: calc(100% - 5em);
-    }
-
-    /* ==============
-        3.2.1 Navbar
-       ============== */
-
-    /* ==============
-        3.2.2 Header
-       ============== */
-
-    /* ============
-        3.2.3 Main
-       ============ */
-
-    .phi-info-left {
-        grid-template-columns: auto;
-        place-items: center;
-        gap: 2em;
-    }
-    /* Profile Username */
-    .phi-profile-username-wrapper {
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* ======================
-        3.2.3.1 Profile Page
-       ====================== */
-
-    /* ==============
-        3.2.4 Footer
-       ============== */
-
-}
-
-/* ======================
-    6.6 max-width: 576px
-   ====================== */
-
-@media only screen and (max-width: 576px) {
-
-    /* ===============
-        3.2 Classes
-       =============== */
-
-    .view-width {
-        width: calc(100% - 3em);
-    }
-
-    /* ==============
-        3.2.1 Navbar
-       ============== */
-
-    /* ==============
-        3.2.2 Header
-       ============== */
-
-    /* ============
-        3.2.3 Main
-       ============ */
-
-    /* ======================
-        3.2.3.1 Profile Page
-       ====================== */
-
-    /* ==============
-        3.2.4 Footer
-       ============== */
-
-}
-
-/* ======================
-    6.7 max-width: 496px
-   ====================== */
-
-@media only screen and (max-width: 496px) {
-
-    /* ===============
-        3.2 Classes
-       =============== */
-
-    /* ==============
-        3.2.1 Navbar
-       ============== */
-
-    /* ==============
-        3.2.2 Header
-       ============== */
-
-    /* ============
-        3.2.3 Main
-       ============ */
-
-    /* ======================
-        3.2.3.1 Profile Page
-       ====================== */
-
-    /* ==============
-        3.2.4 Footer
-       ============== */
-
-}

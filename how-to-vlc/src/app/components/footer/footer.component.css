@@ -11,3 +11,9 @@
     color: var(--amarillo-main); 
     font-size: 1.5vh;
 }
+
+@media screen and (max-width: 767px) {
+    .footer p {
+        display: none;
+    }
+}
