@@ -18,9 +18,9 @@
 /******************************************************* GENERAL ******************************************************/
 
 *{
-    font-family: "Mukta", Arial, Helvetica, sans-serif;
-    color: var(--blanco);
-    text-decoration: none;
+  font-family: "Mukta", Arial, Helvetica, sans-serif;
+  color: var(--blanco);
+  text-decoration: none;
 }
 
 /******************************************************* BODY ******************************************************/
@@ -250,9 +250,9 @@ body{ margin: 0; }
 .red-social .img-link-seccion:active
 { transform: scale(1%) !important; transition: ease-in 50ms 1ms; }
 
-.right-dashboard .img-container:active .img-logo-full{transition: ease-in 100ms 2ms;}
+.right-dashboard .img-container:active .img-logo-full{ transition: ease-in 100ms 0.5ms; }
 
-.red-social .img-link-seccion:hover{filter: drop-shadow(0 5px 10px var(--amarillo-main));}
+.red-social .img-link-seccion:hover{ filter: drop-shadow(0 5px 10px var(--amarillo-main)); }
 
 .red-social .button:hover{
     background-color: var(--amarillo-main); color: var(--item-background);
