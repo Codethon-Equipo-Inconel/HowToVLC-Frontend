@@ -10,7 +10,6 @@ import { RecursoComponent } from './pages/recursos/componentes/recurso/recurso.c
 import { LoginComponent } from './pages/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { EventosComponent } from './pages/eventos/eventos.component';
-import { MapaComponent } from './pages/mapa/mapa.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { GalleryComponent } from './pages/eventos/componentes/gallery/gallery.component';
@@ -28,7 +27,6 @@ import { GradientComponent } from './components/gradient/gradient.component';
     FooterComponent,
     DashboardComponent,
     EventosComponent,
-    MapaComponent,
     PerfilComponent,
     GalleryComponent,
     RegisterComponent,
