@@ -13,6 +13,14 @@ import { Component, OnInit, OnDestroy, Renderer2 } from '@angular/core';
       height: 100vh;
       z-index: -1;
     }
+
+    @media only screen and (max-width : 900px) {
+
+      .background-canvas {
+        filter: blur(50px);
+      }
+
+    }
   `]
 })
 export class GradientComponent implements OnInit, OnDestroy {
@@ -40,7 +48,7 @@ export class GradientComponent implements OnInit, OnDestroy {
   private ballRadius = 40; // Radio de las bolas
   private speed = 0.2; // Velocidad de las bolas (ajustada a un valor más bajo)
 
-  constructor(private renderer: Renderer2) {}
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit() {
     // Configura el canvas
